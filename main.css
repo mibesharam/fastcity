@@ -10,7 +10,7 @@ header nav{
     color:#482358;
 }
 .jumbotron{
-    background-image: url('./images/5cee3ffc3bf44955908678.gif');
+    background-image: url('./images/Background.jpg');
     background-size: 100% 100%;
     padding-bottom: 0px;
 }
@@ -40,6 +40,15 @@ header nav{
 .right{
     text-align: right;
 }
+.display-5{
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size : 30px;
+    font-weight: 300;
+}
+.heading{
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size : 40px;
+}
 .display-3{
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
     font-size : 40px;
@@ -55,6 +64,7 @@ header nav{
 footer{
     padding-top:30px;
     box-shadow: 0 0 3px 1px rgba(1, 1, 1, 0.1);
+    background-color: rgba(236, 240, 241,0.5);
 }
 .footer-2{
     background-color: #34495e;
@@ -64,7 +74,18 @@ footer{
    font-size: 30px;
    color:#3498db;
 }
+#about{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
 .apppromote{
     padding:20px 0px;
+    background-color: rgba(236, 240, 241,0.5);
+}
+.icon{
+    font-size: 200px;
+    color: #047789;
+}
+.bg-grey{
     background-color: rgba(236, 240, 241,0.5);
 }
