@@ -58,7 +58,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<nav class=\"navbar navbar-expand-lg navbar-light\" >\n  <div class=\"container\">\n      <a href=\"#\" class=\"navbar-brand\"> <img src=\"../../assets/images/logo.svg\" alt=\"Cityswift\" width=\"300\"> </a>\n      <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarContent\" aria-controls=\"navbarContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n          <span class=\"navbar-toggler-icon\"></span>\n      </button>\n      <div class=\"collapse navbar-collapse\" id=\"navbarContent\">\n          <ul class=\"navbar-nav\">\n              <li class=\"nav-item\">\n                  <a routerLink=\"/\" class=\"nav-link\">Home</a>\n              </li>\n              <li class=\"nav-item\">\n                  <a href=\"#\" class=\"nav-link\">About</a>\n              </li>\n              <li class=\"nav-item\">\n                  <a href=\"#\" class=\"nav-link\">Contact</a>\n              </li>\n          </ul>\n          <ul class=\"ml-auto d-flex justify-content-end navbar-nav\">\n              <li class=\"nav-item\">\n                  <a href=\"#\" class=\"btn btn-warning btn-round\">Book Courier</a>\n              </li>\n              <li class=\"nav-item\">\n                  <a href=\"#\" class=\"btn btn-success btn-round\">Track Courier</a>\n              </li>\n            </ul>\n      </div>\n  </div>\n</nav>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<nav class=\"navbar navbar-expand-lg navbar-light\" >\n  <div class=\"container\">\n      <a routerLink=\"\" class=\"navbar-brand\"> <img src=\"../../assets/images/logo.svg\" alt=\"Cityswift\" width=\"300\"> </a>\n      <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarContent\" aria-controls=\"navbarContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n          <span class=\"navbar-toggler-icon\"></span>\n      </button>\n      <div class=\"collapse navbar-collapse\" id=\"navbarContent\">\n          <ul class=\"navbar-nav\">\n              <li class=\"nav-item\">\n                  <a routerLink=\"/\" class=\"nav-link\">Home</a>\n              </li>\n              <li class=\"nav-item\">\n                  <a href=\"#\" class=\"nav-link\">About</a>\n              </li>\n              <li class=\"nav-item\">\n                  <a href=\"#\" class=\"nav-link\">Contact</a>\n              </li>\n          </ul>\n          <ul class=\"ml-auto d-flex justify-content-end navbar-nav\">\n              <li class=\"nav-item\">\n                  <a routerLink=\"/order\" class=\"btn btn-warning btn-round\">Book Courier</a>\n              </li>\n              <li class=\"nav-item\">\n                  <a routerLink=\"/order/track\" class=\"btn btn-success btn-round\">Track Courier</a>\n              </li>\n            </ul>\n      </div>\n  </div>\n</nav>\n");
 
 /***/ }),
 
@@ -72,6 +72,32 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ("<header>\n  <app-navbar></app-navbar>\n</header>\n\n<section id=\"banner\">\n  <div class=\"background-banner\"></div>\n  <div class=\"container\">\n    <div class=\"row\">\n      <div class=\"col-lg-7 order-lg-2\">\n          <img src=\"../../../assets/images/courier.svg\" width=\"100%\">\n      </div>\n      <div class=\"col-lg-5 order-lg-1\">\n          <div class=\"p-2\">\n              <h1 class=\"display-4 main-heading\">Shipping Made Easy</h1>\n              <p class=\"lead\">Fastest Courier Service for lowest shipping rates, widest reach and best customer service.</p>\n              <a href=\"#\" class=\"btn btn-info btn-round\">Ship Now !</a>\n          </div>\n      </div>\n\n    </div>\n  </div>\n\n\n\n</section>\n\n<section id=\"whyus\" class=\"container\">\n<h1 class=\"text-center\">Why Choose CitySwift ?</h1>\n<div class=\"row\">\n  <div class=\"col-lg-6\">\n      <img src=\"../assets/images/low-shipping-cost.png\" class=\"float-left\" width=\"100%\">\n  </div>\n  <div class=\"col-lg-6\">\n          <h3 class=\"display-5\"><img src=\"../assets/images/superior_experience.png\">  Hassle Free Shipping with <b>LOW COST</b></h3>\n      <ul>\n          <ul>\n              <li class=\"lead\">Reduce Shipping Cost & Increase Reach   </li>\n              <li class=\"lead\"><b>Intercity</b> Shipping charges starts at Rs. 50/500gms</li>\n              <li class=\"lead\"><b>Domestic</b> Shipping charge: Starts at Rs. 99/500gms<br>\n                  <a class=\"btn btn-outline-info\" href=\"#\">checkout the rate calculator</a>\n              </li>\n              <li class=\"lead\"><b>International</b> shipping : Starts at Rs 210/50gms.</li>\n\n          </ul>\n          <li>Deliver to 26000 serviceable pin codes in India & 220 countries</li>\n          <br>\n                  <a href=\"#\" class=\"btn btn-success\">Know More !</a>\n      </ul>\n  </div>\n</div>\n<hr>\n</section>\n\n<section id=\"feature\" class=\"container\">\n  <h3 class=\"display-5\"> <img src=\"../assets/images/superior_experience.png\"> Superior user Experience</h3>\n<div class=\"row\">\n\n  <div class=\"col-lg-6\">\n\n      <ul>\n          <li class=\"lead\">Effective order tracking via SMS and Email notifications</li>\n          <li class=\"lead\">Easy pickup for return order requests</li>\n          <li class=\"lead\">Gauranteed Dilevery within 1.5 Hours (Intercity Shipping only).</li>\n          <br>\n          <a href=\"#\" class=\"btn btn-success\">Know More !</a>\n      </ul>\n\n  </div>\n  <div class=\"col-lg-6\">\n      <img src=\"../assets/images/superior_experience_customers.png\" width=\"100%\">\n  </div>\n</div>\n<br> <br>\n<h3 class=\"display-5\"> <img src=\"../assets/images/superior_experience.png\"> Quality Shipping & Insurance Coverage.</h3>\n<div class=\"row\">\n\n  <div class=\"col-lg-6\">\n\n      <img src=\"../assets/images/superior_experience_customers.png\" width=\"100%\">\n  </div>\n  <div class=\"col-lg-6\">\n\n      <ul>\n          <li class=\"lead\">Maximum insurance coverage for lost shipments</li>\n          <li class=\"lead\">Better Quality Shipment for Fragile item.</li>\n          <li class=\"lead\">Packing facility Also Available Here.</li>\n          <br>\n          <a href=\"#\" class=\"btn btn-success\">Know More !</a>\n      </ul>\n\n  </div>\n</div>\n\n</section>\n<section id=\"howItWorks\" class=\"bg-grey\">\n<div class=\"container\">\n  <h1 class=\"display-5 text-center\">How It Works ?</h1>\n  <p class=\"text-center\">Just go throught below steps and all done.!</p>\n  <div class=\"row\">\n      <div class=\"col-lg-4 text-center\">\n          <img src=\"../assets/images/fill_order.png\">\n          <h4 class=\"display-6\">1.Fill up Pickup form Online.</h4>\n          <p>By Filling up and Submitting form your shipment is ready for pickup.</p>\n          <a href=\"#\" class=\"btn btn-success\">Register Now !</a>\n      </div>\n      <div class=\"col-lg-4 text-center\">\n          <img src=\"../assets/images/pack_shipment.png\">\n          <h4 class=\"display-6\">2.Do Ready your courier.</h4>\n          <p>Pack well your courier for ready for shipment.</p>\n          <a href=\"#\" class=\"btn btn-success\">Know More</a>\n      </div>\n      <div class=\"col-lg-4 text-center\">\n          <img src=\"../assets/images/track.png\">\n          <h4 class=\"display-6\">3.All Done ! Track Status.</h4>\n          <p>All done you can track status by AWB no. assigned to your parcel.</p>\n          <a href=\"#\" class=\"btn btn-success\">Track Now !</a>\n      </div>\n  </div>\n</div>\n\n\n</section>\n<section id=\"review\" class=\"container\">\n\n<h1 class=\"display-5 text-center\">What Our Customer Says. </h1>\n<br>\n<div id=\"carouselExampleControls\" class=\"carousel slide\" data-ride=\"carousel\">\n  <div class=\"carousel-inner\">\n    <div class=\"carousel-item active\">\n      <blockquote class=\"blockquote text-center\">\n          <p class=\"mb-0\"> <img src=\"../assets/images/left-quote.svg\" class=\"quote-icon\">Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br> Integer posuere erat a ante.</p>\n          <footer class=\"blockquote-footer\">Someone famous in <cite title=\"Source Title\">Source Title</cite></footer>\n      </blockquote>\n    </div>\n    <div class=\"carousel-item\">\n          <blockquote class=\"blockquote text-center\">\n                  <p class=\"mb-0\"> <img src=\"../assets/images/left-quote.svg\" class=\"quote-icon\">Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br> Integer posuere erat a ante.</p>\n                  <footer class=\"blockquote-footer\">Someone famous in <cite title=\"Source Title\">Source Title</cite></footer>\n              </blockquote>\n    </div>\n    <div class=\"carousel-item\">\n          <blockquote class=\"blockquote text-center\">\n                  <p class=\"mb-0\"> <img src=\"../assets/images/left-quote.svg\" class=\"quote-icon\">Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br> Integer posuere erat a ante.</p>\n                  <footer class=\"blockquote-footer\">Someone famous in <cite title=\"Source Title\">Source Title</cite></footer>\n              </blockquote>\n    </div>\n  </div>\n  <a class=\"carousel-control-prev\" href=\"#carouselExampleControls\" role=\"button\" data-slide=\"prev\">\n    <span class=\"carousel-control-prev-icon\" aria-hidden=\"true\"></span>\n    <span class=\"sr-only\">Previous</span>\n  </a>\n  <a class=\"carousel-control-next\" href=\"#carouselExampleControls\" role=\"button\" data-slide=\"next\">\n    <span class=\"carousel-control-next-icon\" aria-hidden=\"true\"></span>\n    <span class=\"sr-only\">Next</span>\n  </a>\n</div>\n</section>\n\n<app-footer></app-footer>\n");
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/order/order/order.component.html":
+/*!****************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/order/order/order.component.html ***!
+  \****************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"background-banner\"></div>\n<app-navbar></app-navbar>\n\n<section id=\"order\">\n  <div class=\"container\">\n\n      <h2 class=\"display-5\">Request a pickup For Courier Now ! </h2>\n\n    <div class=\"d-flex flex-column justify-content-center \">\n      <div class=\"p-2\">\n        <div class=\"card w-100\">\n          <div class=\"card-header\">  <h2 class=\"display-6\">From,</h2></div>\n          <div class=\"card-body\">\n            <div class=\"form-group\">\n              <label>Sender Fullname</label>\n              <input class=\"form-control\" type=\"text\" placeholder=\"Enter Sender Full Name here\">\n            </div>\n            <div class=\"form-row\">\n              <div class=\"col form-group\">\n                <label>Flat/House No.</label>\n                <input type=\"text\" class=\"form-control\" placeholder=\"Flat/House No.\">\n              </div>\n              <div class=\"col form-group\">\n                <label>Appt/Society/Area.</label>\n                <input type=\"text\" class=\"form-control\" placeholder=\"Appt/Society/Area.\">\n              </div>\n            </div>\n            <div class=\"form-row\">\n              <div class=\"col\">\n                <label>City</label>\n                <input class=\"form-control\" type=\"text\" placeholder=\"cIty\">\n              </div>\n              <div class=\"col\">\n                <label>State</label>\n                <input class=\"form-control\" type=\"text\" placeholder=\"State\">\n              </div>\n              <div class=\"col\">\n                <label>Landmark</label>\n                <input class=\"form-control\" type=\"text\" placeholder=\"Landmark\">\n              </div>\n            </div>\n            <div class=\"form-row\">\n              <div class=\"col form-group\">\n                <label>Pincode</label>\n                <input type=\"number\" class=\"form-control\" placeholder=\"pincode\">\n              </div>\n              <div class=\"col form-group\">\n                <label>Email Address :</label>\n                <input type=\"text\" class=\"form-control\" placeholder=\"Enter Email Address For Updates\">\n              </div>\n              <div class=\"col form-group\">\n                <label>Contact No.</label>\n                <input type=\"tel\" class=\"form-control\" placeholder=\"Contact No\">\n              </div>\n            </div>\n            <div class=\"form-row\">\n              <div class=\"col\">\n                <label>Remark</label>\n                <textarea class=\"form-control\" placeholder=\"Remarks / Fragile / contact name (alternate) / etc..\"></textarea>\n              </div>\n            </div>\n\n          </div>\n        </div>\n      </div>\n      <div class=\"p-2\">\n        <div class=\"card w-100\">\n          <div class=\"card-header \"><h2 class=\"display-6\">To,</h2> </div>\n          <div class=\"card-body\">\n            <div class=\"form-group\">\n              <label>Receiver Fullname</label>\n              <input class=\"form-control\" type=\"text\" placeholder=\"Enter Receiver Full Name Here\">\n            </div>\n            <div class=\"form-row\">\n              <div class=\"col form-group\">\n                <label>Flat/House No.</label>\n                <input type=\"text\" class=\"form-control\" placeholder=\"Flat/House No.\">\n              </div>\n              <div class=\"col form-group\">\n                <label>Appt/Society/Area.</label>\n                <input type=\"text\" class=\"form-control\" placeholder=\"Appt/Society/Area.\">\n              </div>\n            </div>\n            <div class=\"form-row\">\n              <div class=\"col\">\n                <label>City</label>\n                <input class=\"form-control\" type=\"text\" placeholder=\"cIty\">\n              </div>\n              <div class=\"col\">\n                <label>State</label>\n                <input class=\"form-control\" type=\"text\" placeholder=\"State\">\n              </div>\n              <div class=\"col\">\n                <label>Landmark</label>\n                <input class=\"form-control\" type=\"text\" placeholder=\"Landmark\">\n              </div>\n            </div>\n            <div class=\"form-row\">\n              <div class=\"col form-group\">\n                <label>Pincode</label>\n                <input type=\"number\" class=\"form-control\" placeholder=\"pincode\">\n              </div>\n              <div class=\"col form-group\">\n                <label>Contact No.</label>\n                <input type=\"tel\" class=\"form-control\" placeholder=\"Contact No\">\n              </div>\n            </div>\n\n          </div>\n        </div>\n      </div>\n      <div class=\"p-2\">\n        <div class=\"card w-100\">\n          <div class=\"card-header \"><h2 class=\"display-6\">Courier Details,</h2> </div>\n          <div class=\"card-body\">\n            <div class=\"form-row\">\n              <div class=\"col form-group\">\n                <label>Weight (Kg)</label>\n                <input type=\"number\" class=\"form-control\" placeholder=\"Enter Weight Here in kg\">\n              </div>\n              <div class=\"col form-group\">\n                <label>Whats Inside ?</label>\n                <input type=\"text\" class=\"form-control\" placeholder=\"Document/Cake/Book/...\">\n              </div>\n            </div>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>\n<section id=\"bill-info\" class=\"container-fluid\">\n  <div class=\"info\">\n    <h2>Total price : 120/-</h2>\n    <button class=\"btn btn-warning btn-round btn-lg w-20 text-light\">Register Pickup!</button>\n    <br><br>\n    <p>By clicking 'Register Pickup' you're forwarding your request to our couriers and agree to our Terms And Conditions as well as any agreement clauses.</p>\n\n    <p>Email / SMS can be send after Requesting for Pickup.</p>\n\n    <p>To Request Pickup , follow these simple Steps !</p>\n    <ol>\n      <li>Provide us with necessary details: addresses, phone numbers at each address, desired time of delivery, weight of the delivery </li>\n      <li>If you like our quote, then click 'Submit order' button</li>\n      <li>Receive a call from the delivery boy assigned for your order. Negotiate, at which point he will be paid. Give him more details about your parcel and desired process.</li>\n      <li>Send us a message or call our Operator in case of any doubt. You will get the Operator's number by clicking 'Order' button, save it with your order's number</li>\n      <li>Get your delivery performed. Give the Courier signature right on his smartphone's screen to verify, that all have been done properly</li>\n    </ol>\n    <p>-You may rate a courier after the delivery is done to help us assign just best couriers.</p>\n\n    <p class=\"lead\">Best Regards, Cityswift.in</p>\n\n  </div>\n</section>\n<app-footer></app-footer>\n");
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/order/track/track.component.html":
+/*!****************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/order/track/track.component.html ***!
+  \****************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"background-banner\"></div>\n<app-navbar></app-navbar>\n<section id=\"tracking\">\n  <div class=\"container\">\n    <div class=\"row\">\n\n      <div class=\"col-lg-6\">\n        <h1 class=\"display-4\">Realtime Tracking on the go !</h1><br>\n        <div class=\"card\">\n          <div class=\"card-body\">\n            <div class=\"form-group\">\n              <label>Enter AWB No.</label>\n              <input type=\"text\" placeholder=\"Enter AWB number here\" class=\"form-control\">\n              <br>\n              <button class=\"btn btn-success\">Track</button>\n            </div>\n          </div>\n        </div>\n      </div>\n      <div class=\"col-lg-6\">\n        <img src=\"../../../assets/images/tracking.svg\" width=\"100%\">\n      </div>\n    </div>\n    <br>\n    <br>\n    <br>\n    <br>\n  </div>\n</section>\n<app-footer></app-footer>\n");
 
 /***/ }),
 
@@ -367,6 +393,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _header_navbar_navbar_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./header/navbar/navbar.component */ "./src/app/header/navbar/navbar.component.ts");
 /* harmony import */ var _footer_footer_footer_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./footer/footer/footer.component */ "./src/app/footer/footer/footer.component.ts");
 /* harmony import */ var _home_home_home_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./home/home/home.component */ "./src/app/home/home/home.component.ts");
+/* harmony import */ var _order_order_order_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./order/order/order.component */ "./src/app/order/order/order.component.ts");
+/* harmony import */ var _order_track_track_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./order/track/track.component */ "./src/app/order/track/track.component.ts");
+/* harmony import */ var _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @angular/platform-browser/animations */ "./node_modules/@angular/platform-browser/fesm2015/animations.js");
+
+
+
 
 
 
@@ -384,14 +416,19 @@ AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
             _app_component__WEBPACK_IMPORTED_MODULE_5__["AppComponent"],
             _header_navbar_navbar_component__WEBPACK_IMPORTED_MODULE_6__["NavbarComponent"],
             _footer_footer_footer_component__WEBPACK_IMPORTED_MODULE_7__["FooterComponent"],
-            _home_home_home_component__WEBPACK_IMPORTED_MODULE_8__["HomeComponent"]
+            _home_home_home_component__WEBPACK_IMPORTED_MODULE_8__["HomeComponent"],
+            _order_order_order_component__WEBPACK_IMPORTED_MODULE_9__["OrderComponent"],
+            _order_track_track_component__WEBPACK_IMPORTED_MODULE_10__["TrackComponent"]
         ],
         imports: [
             _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
             _angular_common_http__WEBPACK_IMPORTED_MODULE_4__["HttpClientModule"],
             _angular_router__WEBPACK_IMPORTED_MODULE_3__["RouterModule"].forRoot([
-                { path: '', component: _home_home_home_component__WEBPACK_IMPORTED_MODULE_8__["HomeComponent"] }
-            ])
+                { path: '', component: _home_home_home_component__WEBPACK_IMPORTED_MODULE_8__["HomeComponent"] },
+                { path: 'order', component: _order_order_order_component__WEBPACK_IMPORTED_MODULE_9__["OrderComponent"] },
+                { path: 'order/track', component: _order_track_track_component__WEBPACK_IMPORTED_MODULE_10__["TrackComponent"] }
+            ]),
+            _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_11__["NoopAnimationsModule"]
         ],
         providers: [],
         bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_5__["AppComponent"]]
@@ -455,7 +492,7 @@ FooterComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("\r\n.navbar-brand{\r\n  width: 300;\r\n}\r\n\r\n.nav-item{\r\n  padding: 1rem 0.6rem;\r\n}\r\n\r\n.nav-item a{\r\n  font-size: 1.1rem;\r\n}\r\n\r\n.navbar-brand{\r\n  font-size: 2rem;\r\n  font-weight: bold;\r\n}\r\n\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvaGVhZGVyL25hdmJhci9uYXZiYXIuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiO0FBQ0E7RUFDRSxVQUFVO0FBQ1o7O0FBRUE7RUFDRSxvQkFBb0I7QUFDdEI7O0FBQ0E7RUFDRSxpQkFBaUI7QUFDbkI7O0FBQ0E7RUFDRSxlQUFlO0VBQ2YsaUJBQWlCO0FBQ25CIiwiZmlsZSI6InNyYy9hcHAvaGVhZGVyL25hdmJhci9uYXZiYXIuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIlxyXG4ubmF2YmFyLWJyYW5ke1xyXG4gIHdpZHRoOiAzMDA7XHJcbn1cclxuXHJcbi5uYXYtaXRlbXtcclxuICBwYWRkaW5nOiAxcmVtIDAuNnJlbTtcclxufVxyXG4ubmF2LWl0ZW0gYXtcclxuICBmb250LXNpemU6IDEuMXJlbTtcclxufVxyXG4ubmF2YmFyLWJyYW5ke1xyXG4gIGZvbnQtc2l6ZTogMnJlbTtcclxuICBmb250LXdlaWdodDogYm9sZDtcclxufVxyXG4iXX0= */");
+/* harmony default export */ __webpack_exports__["default"] = (".navbar-brand{\r\n  font-family: 'Pacifico', cursive;\r\n}\r\n\r\n.nav-item{\r\n  padding: 1rem 0.6rem;\r\n}\r\n\r\n.nav-item a{\r\n  font-size: 1.1rem;\r\n}\r\n\r\n.navbar-brand{\r\n  font-size: 2rem;\r\n  font-weight: bold;\r\n}\r\n\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvaGVhZGVyL25hdmJhci9uYXZiYXIuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLGdDQUFnQztBQUNsQzs7QUFFQTtFQUNFLG9CQUFvQjtBQUN0Qjs7QUFDQTtFQUNFLGlCQUFpQjtBQUNuQjs7QUFDQTtFQUNFLGVBQWU7RUFDZixpQkFBaUI7QUFDbkIiLCJmaWxlIjoic3JjL2FwcC9oZWFkZXIvbmF2YmFyL25hdmJhci5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLm5hdmJhci1icmFuZHtcclxuICBmb250LWZhbWlseTogJ1BhY2lmaWNvJywgY3Vyc2l2ZTtcclxufVxyXG5cclxuLm5hdi1pdGVte1xyXG4gIHBhZGRpbmc6IDFyZW0gMC42cmVtO1xyXG59XHJcbi5uYXYtaXRlbSBhe1xyXG4gIGZvbnQtc2l6ZTogMS4xcmVtO1xyXG59XHJcbi5uYXZiYXItYnJhbmR7XHJcbiAgZm9udC1zaXplOiAycmVtO1xyXG4gIGZvbnQtd2VpZ2h0OiBib2xkO1xyXG59XHJcbiJdfQ== */");
 
 /***/ }),
 
@@ -529,6 +566,96 @@ HomeComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./home.component.css */ "./src/app/home/home/home.component.css")).default]
     })
 ], HomeComponent);
+
+
+
+/***/ }),
+
+/***/ "./src/app/order/order/order.component.css":
+/*!*************************************************!*\
+  !*** ./src/app/order/order/order.component.css ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (".card-header{\r\n  border-left: 7px solid teal;\r\n  box-sizing: border-box;\r\n  color: teal;\r\n}\r\n.card{\r\n  box-shadow: 0px 1px 5px 2px rgba(128, 128, 128, 0.377);\r\n}\r\n#order{\r\n  box-sizing: border-box;\r\n  margin-top: 7%;\r\n}\r\n#bill-info{\r\n  padding: 0% 5%;\r\n  margin-bottom: 0px;\r\n}\r\n#bill-info .info{\r\n  color: white;\r\n  /*background: #d10740;*/\r\n  background: #2c3e50;\r\n  padding: 5%;\r\n  border-top-left-radius: 10px;\r\n  border-top-right-radius: 10px;\r\n}\r\n.background-banner{\r\n  width: 100%;\r\n  height: 80vh;\r\n  box-sizing: border-box;\r\n  background: rgb(255,255,255);\r\n  background: linear-gradient(60deg, rgba(255,255,255,1) 63%, rgba(30,132,159,1) 63%, rgba(3,117,147,1) 100%);\r\n  position: absolute;\r\n  z-index: -1;\r\n}\r\n\r\n\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvb3JkZXIvb3JkZXIvb3JkZXIuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLDJCQUEyQjtFQUMzQixzQkFBc0I7RUFDdEIsV0FBVztBQUNiO0FBQ0E7RUFDRSxzREFBc0Q7QUFDeEQ7QUFDQTtFQUNFLHNCQUFzQjtFQUN0QixjQUFjO0FBQ2hCO0FBQ0E7RUFDRSxjQUFjO0VBQ2Qsa0JBQWtCO0FBQ3BCO0FBQ0E7RUFDRSxZQUFZO0VBQ1osdUJBQXVCO0VBQ3ZCLG1CQUFtQjtFQUNuQixXQUFXO0VBQ1gsNEJBQTRCO0VBQzVCLDZCQUE2QjtBQUMvQjtBQUNBO0VBQ0UsV0FBVztFQUNYLFlBQVk7RUFDWixzQkFBc0I7RUFDdEIsNEJBQTRCO0VBQzVCLDJHQUEyRztFQUMzRyxrQkFBa0I7RUFDbEIsV0FBVztBQUNiIiwiZmlsZSI6InNyYy9hcHAvb3JkZXIvb3JkZXIvb3JkZXIuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5jYXJkLWhlYWRlcntcclxuICBib3JkZXItbGVmdDogN3B4IHNvbGlkIHRlYWw7XHJcbiAgYm94LXNpemluZzogYm9yZGVyLWJveDtcclxuICBjb2xvcjogdGVhbDtcclxufVxyXG4uY2FyZHtcclxuICBib3gtc2hhZG93OiAwcHggMXB4IDVweCAycHggcmdiYSgxMjgsIDEyOCwgMTI4LCAwLjM3Nyk7XHJcbn1cclxuI29yZGVye1xyXG4gIGJveC1zaXppbmc6IGJvcmRlci1ib3g7XHJcbiAgbWFyZ2luLXRvcDogNyU7XHJcbn1cclxuI2JpbGwtaW5mb3tcclxuICBwYWRkaW5nOiAwJSA1JTtcclxuICBtYXJnaW4tYm90dG9tOiAwcHg7XHJcbn1cclxuI2JpbGwtaW5mbyAuaW5mb3tcclxuICBjb2xvcjogd2hpdGU7XHJcbiAgLypiYWNrZ3JvdW5kOiAjZDEwNzQwOyovXHJcbiAgYmFja2dyb3VuZDogIzJjM2U1MDtcclxuICBwYWRkaW5nOiA1JTtcclxuICBib3JkZXItdG9wLWxlZnQtcmFkaXVzOiAxMHB4O1xyXG4gIGJvcmRlci10b3AtcmlnaHQtcmFkaXVzOiAxMHB4O1xyXG59XHJcbi5iYWNrZ3JvdW5kLWJhbm5lcntcclxuICB3aWR0aDogMTAwJTtcclxuICBoZWlnaHQ6IDgwdmg7XHJcbiAgYm94LXNpemluZzogYm9yZGVyLWJveDtcclxuICBiYWNrZ3JvdW5kOiByZ2IoMjU1LDI1NSwyNTUpO1xyXG4gIGJhY2tncm91bmQ6IGxpbmVhci1ncmFkaWVudCg2MGRlZywgcmdiYSgyNTUsMjU1LDI1NSwxKSA2MyUsIHJnYmEoMzAsMTMyLDE1OSwxKSA2MyUsIHJnYmEoMywxMTcsMTQ3LDEpIDEwMCUpO1xyXG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuICB6LWluZGV4OiAtMTtcclxufVxyXG5cclxuIl19 */");
+
+/***/ }),
+
+/***/ "./src/app/order/order/order.component.ts":
+/*!************************************************!*\
+  !*** ./src/app/order/order/order.component.ts ***!
+  \************************************************/
+/*! exports provided: OrderComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "OrderComponent", function() { return OrderComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+
+
+let OrderComponent = class OrderComponent {
+    constructor() {
+        this.isLinear = true;
+    }
+    ngOnInit() {
+    }
+};
+OrderComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-order',
+        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./order.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/order/order/order.component.html")).default,
+        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./order.component.css */ "./src/app/order/order/order.component.css")).default]
+    })
+], OrderComponent);
+
+
+
+/***/ }),
+
+/***/ "./src/app/order/track/track.component.css":
+/*!*************************************************!*\
+  !*** ./src/app/order/track/track.component.css ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (".card{\r\n  box-shadow: 0px 1px 5px 2px rgba(128, 128, 128, 0.377);\r\n  background: #ecf0f1 ;\r\n}\r\n.background-banner{\r\n  width: 100%;\r\n  height: 80vh;\r\n  box-sizing: border-box;\r\n  background: rgb(255,255,255);\r\n  background: linear-gradient(60deg, rgba(255,255,255,1) 63%, rgba(30,132,159,1) 63%, rgba(3,117,147,1) 100%);\r\n  position: absolute;\r\n  z-index: -1;\r\n}\r\n#tracking{\r\n  margin-top:7%;\r\n}\r\n\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvb3JkZXIvdHJhY2svdHJhY2suY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLHNEQUFzRDtFQUN0RCxvQkFBb0I7QUFDdEI7QUFDQTtFQUNFLFdBQVc7RUFDWCxZQUFZO0VBQ1osc0JBQXNCO0VBQ3RCLDRCQUE0QjtFQUM1QiwyR0FBMkc7RUFDM0csa0JBQWtCO0VBQ2xCLFdBQVc7QUFDYjtBQUNBO0VBQ0UsYUFBYTtBQUNmIiwiZmlsZSI6InNyYy9hcHAvb3JkZXIvdHJhY2svdHJhY2suY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5jYXJke1xyXG4gIGJveC1zaGFkb3c6IDBweCAxcHggNXB4IDJweCByZ2JhKDEyOCwgMTI4LCAxMjgsIDAuMzc3KTtcclxuICBiYWNrZ3JvdW5kOiAjZWNmMGYxIDtcclxufVxyXG4uYmFja2dyb3VuZC1iYW5uZXJ7XHJcbiAgd2lkdGg6IDEwMCU7XHJcbiAgaGVpZ2h0OiA4MHZoO1xyXG4gIGJveC1zaXppbmc6IGJvcmRlci1ib3g7XHJcbiAgYmFja2dyb3VuZDogcmdiKDI1NSwyNTUsMjU1KTtcclxuICBiYWNrZ3JvdW5kOiBsaW5lYXItZ3JhZGllbnQoNjBkZWcsIHJnYmEoMjU1LDI1NSwyNTUsMSkgNjMlLCByZ2JhKDMwLDEzMiwxNTksMSkgNjMlLCByZ2JhKDMsMTE3LDE0NywxKSAxMDAlKTtcclxuICBwb3NpdGlvbjogYWJzb2x1dGU7XHJcbiAgei1pbmRleDogLTE7XHJcbn1cclxuI3RyYWNraW5ne1xyXG4gIG1hcmdpbi10b3A6NyU7XHJcbn1cclxuIl19 */");
+
+/***/ }),
+
+/***/ "./src/app/order/track/track.component.ts":
+/*!************************************************!*\
+  !*** ./src/app/order/track/track.component.ts ***!
+  \************************************************/
+/*! exports provided: TrackComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TrackComponent", function() { return TrackComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+
+
+let TrackComponent = class TrackComponent {
+    constructor() { }
+    ngOnInit() {
+    }
+};
+TrackComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-track',
+        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./track.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/order/track/track.component.html")).default,
+        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./track.component.css */ "./src/app/order/track/track.component.css")).default]
+    })
+], TrackComponent);
 
 
 
