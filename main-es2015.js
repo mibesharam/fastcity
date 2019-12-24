@@ -75,6 +75,19 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/not-found/not-found.component.html":
+/*!******************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/not-found/not-found.component.html ***!
+  \******************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("<app-navbar></app-navbar>\n<div class=\"container\">\n  <div class=\"d-flex flex-column justify-content-center\">\n    <div class=\"p-2\">\n      <img src=\"../../assets/images/404.svg\" width=\"100%\">\n    </div>\n    <div class=\"p-2\">\n      <h1 class=\"display-3\">Opps ! Something Went Wrong</h1>\n      <p>Go back to Home <a routerLink=\"\">Home</a></p>\n    </div>\n  </div>\n</div>\n<app-footer></app-footer>\n");
+
+/***/ }),
+
 /***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/order/order/order.component.html":
 /*!****************************************************************************************!*\
   !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/order/order/order.component.html ***!
@@ -84,7 +97,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"background-banner\"></div>\n<app-navbar></app-navbar>\n\n<section id=\"order\">\n  <div class=\"container\">\n\n      <h2 class=\"display-5\">Request a pickup For Courier Now ! </h2>\n\n    <div class=\"d-flex flex-column justify-content-center \">\n      <div class=\"p-2\">\n        <div class=\"card w-100\">\n          <div class=\"card-header\">  <h2 class=\"display-6\">From,</h2></div>\n          <div class=\"card-body\">\n            <div class=\"form-group\">\n              <label>Sender Fullname</label>\n              <input class=\"form-control\" type=\"text\" placeholder=\"Enter Sender Full Name here\">\n            </div>\n            <div class=\"form-row\">\n              <div class=\"col form-group\">\n                <label>Flat/House No.</label>\n                <input type=\"text\" class=\"form-control\" placeholder=\"Flat/House No.\">\n              </div>\n              <div class=\"col form-group\">\n                <label>Appt/Society/Area.</label>\n                <input type=\"text\" class=\"form-control\" placeholder=\"Appt/Society/Area.\">\n              </div>\n            </div>\n            <div class=\"form-row\">\n              <div class=\"col\">\n                <label>City</label>\n                <input class=\"form-control\" type=\"text\" placeholder=\"cIty\">\n              </div>\n              <div class=\"col\">\n                <label>State</label>\n                <input class=\"form-control\" type=\"text\" placeholder=\"State\">\n              </div>\n              <div class=\"col\">\n                <label>Landmark</label>\n                <input class=\"form-control\" type=\"text\" placeholder=\"Landmark\">\n              </div>\n            </div>\n            <div class=\"form-row\">\n              <div class=\"col form-group\">\n                <label>Pincode</label>\n                <input type=\"number\" class=\"form-control\" placeholder=\"pincode\">\n              </div>\n              <div class=\"col form-group\">\n                <label>Email Address :</label>\n                <input type=\"text\" class=\"form-control\" placeholder=\"Enter Email Address For Updates\">\n              </div>\n              <div class=\"col form-group\">\n                <label>Contact No.</label>\n                <input type=\"tel\" class=\"form-control\" placeholder=\"Contact No\">\n              </div>\n            </div>\n            <div class=\"form-row\">\n              <div class=\"col\">\n                <label>Remark</label>\n                <textarea class=\"form-control\" placeholder=\"Remarks / Fragile / contact name (alternate) / etc..\"></textarea>\n              </div>\n            </div>\n\n          </div>\n        </div>\n      </div>\n      <div class=\"p-2\">\n        <div class=\"card w-100\">\n          <div class=\"card-header \"><h2 class=\"display-6\">To,</h2> </div>\n          <div class=\"card-body\">\n            <div class=\"form-group\">\n              <label>Receiver Fullname</label>\n              <input class=\"form-control\" type=\"text\" placeholder=\"Enter Receiver Full Name Here\">\n            </div>\n            <div class=\"form-row\">\n              <div class=\"col form-group\">\n                <label>Flat/House No.</label>\n                <input type=\"text\" class=\"form-control\" placeholder=\"Flat/House No.\">\n              </div>\n              <div class=\"col form-group\">\n                <label>Appt/Society/Area.</label>\n                <input type=\"text\" class=\"form-control\" placeholder=\"Appt/Society/Area.\">\n              </div>\n            </div>\n            <div class=\"form-row\">\n              <div class=\"col\">\n                <label>City</label>\n                <input class=\"form-control\" type=\"text\" placeholder=\"cIty\">\n              </div>\n              <div class=\"col\">\n                <label>State</label>\n                <input class=\"form-control\" type=\"text\" placeholder=\"State\">\n              </div>\n              <div class=\"col\">\n                <label>Landmark</label>\n                <input class=\"form-control\" type=\"text\" placeholder=\"Landmark\">\n              </div>\n            </div>\n            <div class=\"form-row\">\n              <div class=\"col form-group\">\n                <label>Pincode</label>\n                <input type=\"number\" class=\"form-control\" placeholder=\"pincode\">\n              </div>\n              <div class=\"col form-group\">\n                <label>Contact No.</label>\n                <input type=\"tel\" class=\"form-control\" placeholder=\"Contact No\">\n              </div>\n            </div>\n\n          </div>\n        </div>\n      </div>\n      <div class=\"p-2\">\n        <div class=\"card w-100\">\n          <div class=\"card-header \"><h2 class=\"display-6\">Courier Details,</h2> </div>\n          <div class=\"card-body\">\n            <div class=\"form-row\">\n              <div class=\"col form-group\">\n                <label>Weight (Kg)</label>\n                <input type=\"number\" class=\"form-control\" placeholder=\"Enter Weight Here in kg\">\n              </div>\n              <div class=\"col form-group\">\n                <label>Whats Inside ?</label>\n                <input type=\"text\" class=\"form-control\" placeholder=\"Document/Cake/Book/...\">\n              </div>\n            </div>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>\n<section id=\"bill-info\" class=\"container-fluid\">\n  <div class=\"info\">\n    <h2>Total price : 120/-</h2>\n    <button class=\"btn btn-warning btn-round btn-lg w-20 text-light\">Register Pickup!</button>\n    <br><br>\n    <p>By clicking 'Register Pickup' you're forwarding your request to our couriers and agree to our Terms And Conditions as well as any agreement clauses.</p>\n\n    <p>Email / SMS can be send after Requesting for Pickup.</p>\n\n    <p>To Request Pickup , follow these simple Steps !</p>\n    <ol>\n      <li>Provide us with necessary details: addresses, phone numbers at each address, desired time of delivery, weight of the delivery </li>\n      <li>If you like our quote, then click 'Submit order' button</li>\n      <li>Receive a call from the delivery boy assigned for your order. Negotiate, at which point he will be paid. Give him more details about your parcel and desired process.</li>\n      <li>Send us a message or call our Operator in case of any doubt. You will get the Operator's number by clicking 'Order' button, save it with your order's number</li>\n      <li>Get your delivery performed. Give the Courier signature right on his smartphone's screen to verify, that all have been done properly</li>\n    </ol>\n    <p>-You may rate a courier after the delivery is done to help us assign just best couriers.</p>\n\n    <p class=\"lead\">Best Regards, Cityswift.in</p>\n\n  </div>\n</section>\n<app-footer></app-footer>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"background-banner\"></div>\n<app-navbar></app-navbar>\n<form ngForm #f=\"ngForm\" (ngSubmit)=\"submit(f)\">\n<section id=\"order\">\n  <div class=\"container\">\n\n    <h2 class=\"display-4\">Fastest Courier Service <span class=\"highlight\">Now in Surat !</span> </h2>\n    <p class=\"display-5\">Need an urgent delivery made in Surat ?</p>\n    <p class=\"lead\">Just fillup the Form and sit Back & Rest.</p>\n\n    <div class=\"form-group\">\n      <label>Weight</label>\n      <ul class=\"nav nav-pills\">\n        <li class=\"nav-item\">\n          <button class=\"nav-link btn\" [ngClass]=\"{'active' : order.weight == 5}\" (click)=\"changeWeight(5)\" value=\"5\">Upto 5 Kg</button>\n        </li>\n        <li class=\"nav-item\">\n          <button class=\"nav-link btn\" (click)=\"changeWeight(10)\" [ngClass]=\"{'active' : order.weight == 10}\" value=\"10\">Upto 10 Kg</button>\n        </li>\n        <li class=\"nav-item\">\n          <button class=\"nav-link btn\" (click)=\"changeWeight(15)\" [ngClass]=\"{'active' : order.weight == 15}\" value=\"15\" >Upto 15 Kg</button>\n        </li>\n        <li class=\"nav-item\">\n          <button class=\"nav-link btn\" (click)=\"changeWeight(20)\" [ngClass]=\"{'active' : order.weight == 20}\" value=\"20\">Upto 20 Kg</button>\n        </li>\n\n      </ul>\n    </div>\n\n    <div class=\"d-flex flex-column justify-content-center \">\n      <div class=\"p-2\">\n        <div class=\"card w-100\">\n          <div class=\"card-header\">  <h2 class=\"display-6\">From,</h2></div>\n          <div class=\"card-body\">\n            <div class=\"form-group\">\n              <label>Pickup Address</label>\n              <input ngModel name=\"p_loation\" [(ngModel)]=\"pickup_location.p_location\" #p_location=\"ngModel\" class=\"form-control\" type=\"text\" placeholder=\"Enter Pickup Location here\" >\n            </div>\n            <div class=\"form-row\">\n              <div class=\"col form-group\">\n                <label>Contact No.</label>\n                <input ngModel name=\"p_phone\" #p_phone=\"ngModel\" type=\"text\" class=\"form-control\" placeholder=\"Contact No.\">\n              </div>\n              <div class=\"col form-group\">\n                <label>Pincode</label>\n                <input ngModel name=\"p_pincode\" #p_pincode=\"ngModel\" type=\"text\" class=\"form-control\" placeholder=\"pincode\">\n              </div>\n            </div>\n            <div class=\"form-row\">\n              <div class=\"col form-group\">\n                <textarea ngModel name=\"p_remark\" #p_remark=\"ngModel\" class=\"form-control\" placeholder=\"flat number, floor, building name, street name, landmarks, dimensions, package, fragile, contact name, etc.\"></textarea>\n              </div>\n            </div>\n          </div>\n        </div>\n      </div>\n      <div class=\"p-2\">\n        <div class=\"card w-100\">\n          <div class=\"card-header \"><h2 class=\"display-6\">To,</h2> </div>\n          <div class=\"card-body\">\n            <div class=\"form-group\">\n              <label>Delivery Address</label>\n              <input ngModel name=\"d_location\" #d_location=\"ngModel\" class=\"form-control\" type=\"text\" placeholder=\"Enter Pickup Location here\">\n            </div>\n            <div class=\"form-row\">\n              <div class=\"col form-group\">\n                <label>Contact No.</label>\n                <input ngModel name=\"d_phone\" #d_phone=\"ngModel\" type=\"text\" class=\"form-control\" placeholder=\"Contact No.\">\n              </div>\n              <div class=\"col form-group\">\n                <label>Pincode</label>\n                <input ngModel name=\"d_pincode\" #d_pincode=\"ngModel\" type=\"text\" class=\"form-control\" placeholder=\"pincode\">\n              </div>\n            </div>\n            <div class=\"form-row\">\n              <div class=\"col form-group\">\n                <textarea ngModel name=\"d_remark\" #d_remark=\"ngModel\" class=\"form-control\" placeholder=\"flat number, floor, building name, street name, landmarks, dimensions, package, fragile, contact name, etc.\"></textarea>\n              </div>\n            </div>\n          </div>\n        </div>\n      </div>\n      <div class=\"p-2\">\n        <div class=\"form-row\">\n          <div class=\"col form-group\">\n            <label>Whats Inside ?</label>\n            <input ngModel name=\"inside\" #inside=\"ngModel\" type=\"text\" class=\"form-control\" placeholder=\"Document/Cake/Book/...\" value=\"{{order.inside}}\">\n            <div class=\"d-flex\">\n              <button class=\"btn btn-link\" (click)=\"select('Document')\">Document</button>\n              <button class=\"btn btn-link\" (click)=\"select('Food')\">Food</button>\n              <button class=\"btn btn-link\" (click)=\"select('Cloth')\">Cloth</button>\n              <button class=\"btn btn-link\" (click)=\"select('Groceries')\">Groceries</button>\n              <button class=\"btn btn-link\" (click)=\"select('Flowers')\">Flowers</button>\n              <button class=\"btn btn-link\" (click)=\"select('Cake')\">Cake</button>\n              <button class=\"btn btn-link\" (click)=\"select('Something')\">Something</button>\n            </div>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>\n<section id=\"bill-info\" class=\"container-fluid\">\n  <div class=\"info\">\n    <h2>Total price : {{order.price}}/-</h2>\n    <button class=\"btn btn-warning btn-round btn-lg w-20 text-light\">Register Pickup!</button>\n    <br><br>\n    <p>By clicking 'Register Pickup' you're forwarding your request to our couriers and agree to our Terms And Conditions as well as any agreement clauses.</p>\n\n    <p>Email / SMS can be send after Requesting for Pickup.</p>\n\n    <p>To Request Pickup , follow these simple Steps !</p>\n    <ol>\n      <li>Provide us with necessary details: addresses, phone numbers at each address, desired time of delivery, weight of the delivery </li>\n      <li>If you like our quote, then click 'Submit order' button</li>\n      <li>Receive a call from the delivery boy assigned for your order. Negotiate, at which point he will be paid. Give him more details about your parcel and desired process.</li>\n      <li>Send us a message or call our Operator in case of any doubt. You will get the Operator's number by clicking 'Order' button, save it with your order's number</li>\n      <li>Get your delivery performed. Give the Courier signature right on his smartphone's screen to verify, that all have been done properly</li>\n    </ol>\n    <p>-You may rate a courier after the delivery is done to help us assign just best couriers.</p>\n\n    <p class=\"lead\">Best Regards, Cityswift.in</p>\n\n  </div>\n</section>\n</form>\n<app-footer></app-footer>\n");
 
 /***/ }),
 
@@ -389,13 +402,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
 /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm2015/http.js");
-/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
-/* harmony import */ var _header_navbar_navbar_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./header/navbar/navbar.component */ "./src/app/header/navbar/navbar.component.ts");
-/* harmony import */ var _footer_footer_footer_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./footer/footer/footer.component */ "./src/app/footer/footer/footer.component.ts");
-/* harmony import */ var _home_home_home_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./home/home/home.component */ "./src/app/home/home/home.component.ts");
-/* harmony import */ var _order_order_order_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./order/order/order.component */ "./src/app/order/order/order.component.ts");
-/* harmony import */ var _order_track_track_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./order/track/track.component */ "./src/app/order/track/track.component.ts");
-/* harmony import */ var _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @angular/platform-browser/animations */ "./node_modules/@angular/platform-browser/fesm2015/animations.js");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm2015/forms.js");
+/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
+/* harmony import */ var _header_navbar_navbar_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./header/navbar/navbar.component */ "./src/app/header/navbar/navbar.component.ts");
+/* harmony import */ var _footer_footer_footer_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./footer/footer/footer.component */ "./src/app/footer/footer/footer.component.ts");
+/* harmony import */ var _home_home_home_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./home/home/home.component */ "./src/app/home/home/home.component.ts");
+/* harmony import */ var _order_order_order_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./order/order/order.component */ "./src/app/order/order/order.component.ts");
+/* harmony import */ var _order_track_track_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./order/track/track.component */ "./src/app/order/track/track.component.ts");
+/* harmony import */ var _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @angular/platform-browser/animations */ "./node_modules/@angular/platform-browser/fesm2015/animations.js");
+/* harmony import */ var _not_found_not_found_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./not-found/not-found.component */ "./src/app/not-found/not-found.component.ts");
+
+
 
 
 
@@ -413,25 +430,29 @@ let AppModule = class AppModule {
 AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"])({
         declarations: [
-            _app_component__WEBPACK_IMPORTED_MODULE_5__["AppComponent"],
-            _header_navbar_navbar_component__WEBPACK_IMPORTED_MODULE_6__["NavbarComponent"],
-            _footer_footer_footer_component__WEBPACK_IMPORTED_MODULE_7__["FooterComponent"],
-            _home_home_home_component__WEBPACK_IMPORTED_MODULE_8__["HomeComponent"],
-            _order_order_order_component__WEBPACK_IMPORTED_MODULE_9__["OrderComponent"],
-            _order_track_track_component__WEBPACK_IMPORTED_MODULE_10__["TrackComponent"]
+            _app_component__WEBPACK_IMPORTED_MODULE_6__["AppComponent"],
+            _header_navbar_navbar_component__WEBPACK_IMPORTED_MODULE_7__["NavbarComponent"],
+            _footer_footer_footer_component__WEBPACK_IMPORTED_MODULE_8__["FooterComponent"],
+            _home_home_home_component__WEBPACK_IMPORTED_MODULE_9__["HomeComponent"],
+            _order_order_order_component__WEBPACK_IMPORTED_MODULE_10__["OrderComponent"],
+            _order_track_track_component__WEBPACK_IMPORTED_MODULE_11__["TrackComponent"],
+            _not_found_not_found_component__WEBPACK_IMPORTED_MODULE_13__["NotFoundComponent"]
         ],
         imports: [
             _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
             _angular_common_http__WEBPACK_IMPORTED_MODULE_4__["HttpClientModule"],
+            _angular_forms__WEBPACK_IMPORTED_MODULE_5__["FormsModule"],
             _angular_router__WEBPACK_IMPORTED_MODULE_3__["RouterModule"].forRoot([
-                { path: '', component: _home_home_home_component__WEBPACK_IMPORTED_MODULE_8__["HomeComponent"] },
-                { path: 'order', component: _order_order_order_component__WEBPACK_IMPORTED_MODULE_9__["OrderComponent"] },
-                { path: 'order/track', component: _order_track_track_component__WEBPACK_IMPORTED_MODULE_10__["TrackComponent"] }
+                { path: '', component: _home_home_home_component__WEBPACK_IMPORTED_MODULE_9__["HomeComponent"] },
+                { path: 'order', component: _order_order_order_component__WEBPACK_IMPORTED_MODULE_10__["OrderComponent"] },
+                { path: 'order/track', component: _order_track_track_component__WEBPACK_IMPORTED_MODULE_11__["TrackComponent"] },
+                { path: '404', component: _not_found_not_found_component__WEBPACK_IMPORTED_MODULE_13__["NotFoundComponent"] },
+                { path: '**', redirectTo: '/404' }
             ]),
-            _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_11__["NoopAnimationsModule"]
+            _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_12__["NoopAnimationsModule"]
         ],
         providers: [],
-        bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_5__["AppComponent"]]
+        bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_6__["AppComponent"]]
     })
 ], AppModule);
 
@@ -571,6 +592,98 @@ HomeComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 
 /***/ }),
 
+/***/ "./src/app/not-found/not-found.component.css":
+/*!***************************************************!*\
+  !*** ./src/app/not-found/not-found.component.css ***!
+  \***************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL25vdC1mb3VuZC9ub3QtZm91bmQuY29tcG9uZW50LmNzcyJ9 */");
+
+/***/ }),
+
+/***/ "./src/app/not-found/not-found.component.ts":
+/*!**************************************************!*\
+  !*** ./src/app/not-found/not-found.component.ts ***!
+  \**************************************************/
+/*! exports provided: NotFoundComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NotFoundComponent", function() { return NotFoundComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+
+
+let NotFoundComponent = class NotFoundComponent {
+    constructor() { }
+    ngOnInit() {
+    }
+};
+NotFoundComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-not-found',
+        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./not-found.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/not-found/not-found.component.html")).default,
+        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./not-found.component.css */ "./src/app/not-found/not-found.component.css")).default]
+    })
+], NotFoundComponent);
+
+
+
+/***/ }),
+
+/***/ "./src/app/order/order.service.ts":
+/*!****************************************!*\
+  !*** ./src/app/order/order.service.ts ***!
+  \****************************************/
+/*! exports provided: OrderService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "OrderService", function() { return OrderService; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm2015/http.js");
+
+
+
+let OrderService = class OrderService {
+    constructor(http) {
+        this.http = http;
+        this.pricePerKm = 8;
+        this.pricePerWeight = [
+            { weight: 5, price: 0 },
+            { weight: 10, price: 50 },
+            { weight: 15, price: 100 },
+            { weight: 20, price: 150 }
+        ];
+    }
+    calculatePrice() {
+        const points = {
+            lat1: '21.1702',
+            lat2: '23.0225',
+            lon1: '72.8311',
+            lon2: '72.5714'
+        };
+        return this.http.post('http://localhost:3000/distance', points);
+    }
+};
+OrderService.ctorParameters = () => [
+    { type: _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"] }
+];
+OrderService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({ providedIn: 'root' })
+], OrderService);
+
+
+
+/***/ }),
+
 /***/ "./src/app/order/order/order.component.css":
 /*!*************************************************!*\
   !*** ./src/app/order/order/order.component.css ***!
@@ -580,7 +693,7 @@ HomeComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = (".card-header{\r\n  border-left: 7px solid teal;\r\n  box-sizing: border-box;\r\n  color: teal;\r\n}\r\n.card{\r\n  box-shadow: 0px 1px 5px 2px rgba(128, 128, 128, 0.377);\r\n}\r\n#order{\r\n  box-sizing: border-box;\r\n  margin-top: 7%;\r\n}\r\n#bill-info{\r\n  padding: 0% 5%;\r\n  margin-bottom: 0px;\r\n}\r\n#bill-info .info{\r\n  color: white;\r\n  /*background: #d10740;*/\r\n  background: #2c3e50;\r\n  padding: 5%;\r\n  border-top-left-radius: 10px;\r\n  border-top-right-radius: 10px;\r\n}\r\n.background-banner{\r\n  width: 100%;\r\n  height: 80vh;\r\n  box-sizing: border-box;\r\n  background: rgb(255,255,255);\r\n  background: linear-gradient(60deg, rgba(255,255,255,1) 63%, rgba(30,132,159,1) 63%, rgba(3,117,147,1) 100%);\r\n  position: absolute;\r\n  z-index: -1;\r\n}\r\n\r\n\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvb3JkZXIvb3JkZXIvb3JkZXIuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLDJCQUEyQjtFQUMzQixzQkFBc0I7RUFDdEIsV0FBVztBQUNiO0FBQ0E7RUFDRSxzREFBc0Q7QUFDeEQ7QUFDQTtFQUNFLHNCQUFzQjtFQUN0QixjQUFjO0FBQ2hCO0FBQ0E7RUFDRSxjQUFjO0VBQ2Qsa0JBQWtCO0FBQ3BCO0FBQ0E7RUFDRSxZQUFZO0VBQ1osdUJBQXVCO0VBQ3ZCLG1CQUFtQjtFQUNuQixXQUFXO0VBQ1gsNEJBQTRCO0VBQzVCLDZCQUE2QjtBQUMvQjtBQUNBO0VBQ0UsV0FBVztFQUNYLFlBQVk7RUFDWixzQkFBc0I7RUFDdEIsNEJBQTRCO0VBQzVCLDJHQUEyRztFQUMzRyxrQkFBa0I7RUFDbEIsV0FBVztBQUNiIiwiZmlsZSI6InNyYy9hcHAvb3JkZXIvb3JkZXIvb3JkZXIuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5jYXJkLWhlYWRlcntcclxuICBib3JkZXItbGVmdDogN3B4IHNvbGlkIHRlYWw7XHJcbiAgYm94LXNpemluZzogYm9yZGVyLWJveDtcclxuICBjb2xvcjogdGVhbDtcclxufVxyXG4uY2FyZHtcclxuICBib3gtc2hhZG93OiAwcHggMXB4IDVweCAycHggcmdiYSgxMjgsIDEyOCwgMTI4LCAwLjM3Nyk7XHJcbn1cclxuI29yZGVye1xyXG4gIGJveC1zaXppbmc6IGJvcmRlci1ib3g7XHJcbiAgbWFyZ2luLXRvcDogNyU7XHJcbn1cclxuI2JpbGwtaW5mb3tcclxuICBwYWRkaW5nOiAwJSA1JTtcclxuICBtYXJnaW4tYm90dG9tOiAwcHg7XHJcbn1cclxuI2JpbGwtaW5mbyAuaW5mb3tcclxuICBjb2xvcjogd2hpdGU7XHJcbiAgLypiYWNrZ3JvdW5kOiAjZDEwNzQwOyovXHJcbiAgYmFja2dyb3VuZDogIzJjM2U1MDtcclxuICBwYWRkaW5nOiA1JTtcclxuICBib3JkZXItdG9wLWxlZnQtcmFkaXVzOiAxMHB4O1xyXG4gIGJvcmRlci10b3AtcmlnaHQtcmFkaXVzOiAxMHB4O1xyXG59XHJcbi5iYWNrZ3JvdW5kLWJhbm5lcntcclxuICB3aWR0aDogMTAwJTtcclxuICBoZWlnaHQ6IDgwdmg7XHJcbiAgYm94LXNpemluZzogYm9yZGVyLWJveDtcclxuICBiYWNrZ3JvdW5kOiByZ2IoMjU1LDI1NSwyNTUpO1xyXG4gIGJhY2tncm91bmQ6IGxpbmVhci1ncmFkaWVudCg2MGRlZywgcmdiYSgyNTUsMjU1LDI1NSwxKSA2MyUsIHJnYmEoMzAsMTMyLDE1OSwxKSA2MyUsIHJnYmEoMywxMTcsMTQ3LDEpIDEwMCUpO1xyXG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuICB6LWluZGV4OiAtMTtcclxufVxyXG5cclxuIl19 */");
+/* harmony default export */ __webpack_exports__["default"] = (".card-header{\r\n  border-left: 7px solid teal;\r\n  box-sizing: border-box;\r\n  color: teal;\r\n}\r\n.card{\r\n  box-shadow: 0px 1px 5px 2px rgba(128, 128, 128, 0.377);\r\n}\r\n#order{\r\n  box-sizing: border-box;\r\n  margin-top: 7%;\r\n}\r\n#bill-info{\r\n  padding: 0% 5%;\r\n  margin-bottom: 0px;\r\n}\r\n#bill-info .info{\r\n  color: white;\r\n  /*background: #d10740;*/\r\n  background: #2c3e50;\r\n  padding: 5%;\r\n  border-top-left-radius: 10px;\r\n  border-top-right-radius: 10px;\r\n}\r\n.background-banner{\r\n  width: 100%;\r\n  height: 80vh;\r\n  box-sizing: border-box;\r\n  background: rgb(255,255,255);\r\n  background: linear-gradient(60deg, rgba(255,255,255,1) 63%, rgba(30,132,159,1) 63%, rgba(3,117,147,1) 100%);\r\n  position: absolute;\r\n  z-index: -1;\r\n}\r\n.title{\r\n  margin-bottom: 2%;\r\n  font-weight: 300;\r\n  font-size: 3rem;\r\n}\r\n.highlight{\r\n  background: #f39c12;\r\n  color: white;\r\n  box-sizing: border-box;\r\n  border-radius: 20px;\r\n  padding: 1% 2%;\r\n}\r\nlabel{\r\n  font-size: 1rem;\r\n  font-weight: bold;\r\n}\r\n\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvb3JkZXIvb3JkZXIvb3JkZXIuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLDJCQUEyQjtFQUMzQixzQkFBc0I7RUFDdEIsV0FBVztBQUNiO0FBQ0E7RUFDRSxzREFBc0Q7QUFDeEQ7QUFDQTtFQUNFLHNCQUFzQjtFQUN0QixjQUFjO0FBQ2hCO0FBQ0E7RUFDRSxjQUFjO0VBQ2Qsa0JBQWtCO0FBQ3BCO0FBQ0E7RUFDRSxZQUFZO0VBQ1osdUJBQXVCO0VBQ3ZCLG1CQUFtQjtFQUNuQixXQUFXO0VBQ1gsNEJBQTRCO0VBQzVCLDZCQUE2QjtBQUMvQjtBQUNBO0VBQ0UsV0FBVztFQUNYLFlBQVk7RUFDWixzQkFBc0I7RUFDdEIsNEJBQTRCO0VBQzVCLDJHQUEyRztFQUMzRyxrQkFBa0I7RUFDbEIsV0FBVztBQUNiO0FBQ0E7RUFDRSxpQkFBaUI7RUFDakIsZ0JBQWdCO0VBQ2hCLGVBQWU7QUFDakI7QUFDQTtFQUNFLG1CQUFtQjtFQUNuQixZQUFZO0VBQ1osc0JBQXNCO0VBQ3RCLG1CQUFtQjtFQUNuQixjQUFjO0FBQ2hCO0FBQ0E7RUFDRSxlQUFlO0VBQ2YsaUJBQWlCO0FBQ25CIiwiZmlsZSI6InNyYy9hcHAvb3JkZXIvb3JkZXIvb3JkZXIuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5jYXJkLWhlYWRlcntcclxuICBib3JkZXItbGVmdDogN3B4IHNvbGlkIHRlYWw7XHJcbiAgYm94LXNpemluZzogYm9yZGVyLWJveDtcclxuICBjb2xvcjogdGVhbDtcclxufVxyXG4uY2FyZHtcclxuICBib3gtc2hhZG93OiAwcHggMXB4IDVweCAycHggcmdiYSgxMjgsIDEyOCwgMTI4LCAwLjM3Nyk7XHJcbn1cclxuI29yZGVye1xyXG4gIGJveC1zaXppbmc6IGJvcmRlci1ib3g7XHJcbiAgbWFyZ2luLXRvcDogNyU7XHJcbn1cclxuI2JpbGwtaW5mb3tcclxuICBwYWRkaW5nOiAwJSA1JTtcclxuICBtYXJnaW4tYm90dG9tOiAwcHg7XHJcbn1cclxuI2JpbGwtaW5mbyAuaW5mb3tcclxuICBjb2xvcjogd2hpdGU7XHJcbiAgLypiYWNrZ3JvdW5kOiAjZDEwNzQwOyovXHJcbiAgYmFja2dyb3VuZDogIzJjM2U1MDtcclxuICBwYWRkaW5nOiA1JTtcclxuICBib3JkZXItdG9wLWxlZnQtcmFkaXVzOiAxMHB4O1xyXG4gIGJvcmRlci10b3AtcmlnaHQtcmFkaXVzOiAxMHB4O1xyXG59XHJcbi5iYWNrZ3JvdW5kLWJhbm5lcntcclxuICB3aWR0aDogMTAwJTtcclxuICBoZWlnaHQ6IDgwdmg7XHJcbiAgYm94LXNpemluZzogYm9yZGVyLWJveDtcclxuICBiYWNrZ3JvdW5kOiByZ2IoMjU1LDI1NSwyNTUpO1xyXG4gIGJhY2tncm91bmQ6IGxpbmVhci1ncmFkaWVudCg2MGRlZywgcmdiYSgyNTUsMjU1LDI1NSwxKSA2MyUsIHJnYmEoMzAsMTMyLDE1OSwxKSA2MyUsIHJnYmEoMywxMTcsMTQ3LDEpIDEwMCUpO1xyXG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuICB6LWluZGV4OiAtMTtcclxufVxyXG4udGl0bGV7XHJcbiAgbWFyZ2luLWJvdHRvbTogMiU7XHJcbiAgZm9udC13ZWlnaHQ6IDMwMDtcclxuICBmb250LXNpemU6IDNyZW07XHJcbn1cclxuLmhpZ2hsaWdodHtcclxuICBiYWNrZ3JvdW5kOiAjZjM5YzEyO1xyXG4gIGNvbG9yOiB3aGl0ZTtcclxuICBib3gtc2l6aW5nOiBib3JkZXItYm94O1xyXG4gIGJvcmRlci1yYWRpdXM6IDIwcHg7XHJcbiAgcGFkZGluZzogMSUgMiU7XHJcbn1cclxubGFiZWx7XHJcbiAgZm9udC1zaXplOiAxcmVtO1xyXG4gIGZvbnQtd2VpZ2h0OiBib2xkO1xyXG59XHJcbiJdfQ== */");
 
 /***/ }),
 
@@ -595,18 +708,73 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "OrderComponent", function() { return OrderComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _order_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./../order.service */ "./src/app/order/order.service.ts");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+
 
 
 let OrderComponent = class OrderComponent {
-    constructor() {
-        this.isLinear = true;
+    constructor(orderService) {
+        this.orderService = orderService;
+        this.pickup_location = {};
+        this.order = {
+            weight: 5,
+            price: 69
+        };
+        this.getCurrentLocation();
     }
     ngOnInit() {
     }
+    changeWeight(weight) {
+        this.order.weight = weight;
+    }
+    select(doc) {
+        this.order.inside = doc;
+        this.calulateShipping();
+    }
+    submit(f) {
+        // this.order.details = f.value;
+        // console.log(this.order);
+        this.calulateShipping();
+    }
+    getCurrentLocation() {
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(position => {
+                this.currLat = position.coords.latitude;
+                this.currLng = position.coords.longitude;
+            });
+            console.log("longitude : " + this.currLng);
+            console.log("Lattitude : " + this.currLat);
+        }
+        else {
+            console.log("Geolocation is not supported by this browser.");
+        }
+    }
+    calulateShipping() {
+        this.orderService.calculatePrice().subscribe((d) => {
+            this.order.price = d.distance * 8;
+            if (this.order.weight > 5) {
+                switch (this.order.weight) {
+                    case 10:
+                        this.order.price += 50;
+                        break;
+                    case 15:
+                        this.order.price += 100;
+                        break;
+                    case 20:
+                        this.order.price += 150;
+                        break;
+                }
+            }
+            console.log(this.order.weight);
+        });
+    }
 };
+OrderComponent.ctorParameters = () => [
+    { type: _order_service__WEBPACK_IMPORTED_MODULE_1__["OrderService"] }
+];
 OrderComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["Component"])({
         selector: 'app-order',
         template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./order.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/order/order/order.component.html")).default,
         styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./order.component.css */ "./src/app/order/order/order.component.css")).default]
