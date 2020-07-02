@@ -1,0 +1,23 @@
+@import "../../../assets/styles/variables.scss";
+.input-title {
+  font-size: 1.2rem;
+  font-weight: normal;
+}
+mat-form-field.input-t {
+  &.input-addr {
+    width: 70%;
+    margin-right: 1rem;
+  }
+  &.input-pin {
+    width: 25%;
+  }
+}
+
+button.btn-order {
+  background-color: $color-primary-light;
+  color: $color-text-light;
+  font-size: 1.3rem;
+  padding: 0.5rem 2rem;
+  position: relative;
+  top: 0.7rem;
+}

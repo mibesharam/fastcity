@@ -1,0 +1,48 @@
+@import "../../../assets/styles/variables.scss";
+.logo {
+  max-width: 12rem;
+}
+footer.footer {
+  background-color: $color-primary-dark;
+  color: $color-text-light;
+  padding: 3rem 2rem;
+
+  & h3.footer-heading {
+    margin-top: 5px;
+    font-weight: 500;
+    font-size: 1.08rem;
+    position: relative;
+  }
+
+  & h3.footer-heading::before {
+    content: " ";
+    width: 3rem;
+    position: absolute;
+    height: 2px;
+    background-color: $color-text-light;
+    top: 110%;
+  }
+}
+
+ul.footer-nav {
+  list-style: none;
+  padding-left: 0.1rem;
+  position: relative;
+  & li a.nav-link {
+    padding-left: 0.1rem;
+    font-size: 0.9rem;
+    text-decoration: none;
+    color: $color-text-light;
+  }
+
+  & li a.nav-link:hover {
+    color: $color-primary-light;
+    cursor: pointer;
+  }
+  & li a.nav-link::before {
+    content: "-  ";
+  }
+}
+i.material-icons {
+  margin-right: 1rem;
+}

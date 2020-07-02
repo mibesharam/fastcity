@@ -1,0 +1,40 @@
+@import "../../../assets/styles/variables.scss";
+.navbar {
+  color: $color-text-grey;
+}
+.logo {
+  max-width: 10.5rem;
+}
+.navbar-brand {
+  & {
+    color: $color-text-dark;
+  }
+}
+li.nav-item {
+  & a {
+    font-weight: 400;
+    font-size: 0.9rem;
+    position: relative;
+    color: $color-text-grey;
+  }
+  & a.nav-link.active {
+    font-weight: 500;
+    color: $color-text-dark;
+  }
+  & a.nav-link.active::after {
+    content: " ";
+    width: 0.4rem;
+    height: 0.4rem;
+    position: absolute;
+    z-index: 12;
+    background-color: $color-primary-light;
+    top: 90%;
+    left: 43%;
+    border-radius: 50%;
+  }
+  & a.btn-order {
+    background-color: $color-primary-light;
+    color: $color-text-light;
+    font-weight: 500;
+  }
+}

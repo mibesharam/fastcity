@@ -1,0 +1,24 @@
+@import "../../../assets/styles/variables.scss";
+
+section.login {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.register-btn {
+  background-color: $color-accent-light;
+  color: $color-text-light;
+}
+.login-btn {
+  background-color: $color-primary-light;
+  color: $color-text-light;
+}
+
+div.form-div {
+  padding: 2rem;
+  position: relative;
+  top: 50%;
+  transform: translate(0, -50%);
+}

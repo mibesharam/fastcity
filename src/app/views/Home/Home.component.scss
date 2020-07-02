@@ -1,0 +1,107 @@
+@import "../../../assets/styles/variables.scss";
+section.banner {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+.text-div {
+  margin-top: 3rem;
+}
+.banner-heading {
+  &-1 {
+    font-size: 2.77rem;
+    color: $color-text-dark;
+  }
+  &-2 {
+    margin-top: 4rem;
+    font-size: 2.15rem;
+    color: $color-text-grey;
+  }
+}
+.banner-text {
+  font-size: 1rem;
+  font-weight: 400;
+  color: $color-text-grey;
+}
+
+//quickorder
+section.quick-order {
+  width: 100%;
+  background-color: $color-primary-light2;
+  min-height: 17rem;
+  padding: 3rem 1rem;
+  margin-bottom: 10rem;
+}
+
+//services
+section.service {
+  padding-bottom: 10rem;
+}
+.serv-main-img {
+  display: block;
+  max-width: 70%;
+  margin: 0 auto;
+}
+.service-heading-1 {
+  font-size: 2rem;
+  color: $color-text-dark;
+  font-weight: 400;
+  & span {
+    display: block;
+    margin: 1rem 0;
+  }
+}
+.watch-video-btn {
+  background-color: black;
+}
+
+.detail-services {
+  margin-top: 2rem;
+  padding-top: 4rem;
+  padding-bottom: 1rem;
+  //background-color: $color-background-light;
+  & mat-card-content {
+    text-align: center;
+  }
+  & mat-card {
+    width: 80%;
+    margin: 2rem auto;
+  }
+}
+
+p.card-content-text {
+  font-size: 1rem;
+  font-weight: 400;
+  color: $color-text-grey;
+  text-align: center;
+}
+
+section.howitworks {
+  background-color: $color-background-light;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  & .container {
+    display: block;
+    margin-top: 3rem;
+  }
+}
+
+.emoji-icon {
+  font-size: 1.4rem;
+}
+
+section.reviews {
+  padding: 10rem 5rem;
+}
+
+//mat-card
+
+.review-slide {
+  padding: 0 1.2rem;
+}
+mat-card.review-card {
+  margin: 2rem 1.4rem;
+  & img.profile-img {
+    max-width: 70px;
+    border-radius: 50%;
+  }
+}
