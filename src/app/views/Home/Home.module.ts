@@ -6,7 +6,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { QuickOrderModule } from 'src/app/components/quick-order/quick-order.module';
 import { MatCardModule } from '@angular/material/card';
 import { CarouselModule } from 'ngx-owl-carousel-o';
-import { MatFormFieldModule, MatInputModule } from '@angular/material';
+import { MatFormFieldModule, MatInputModule, MatIcon, MatIconModule } from '@angular/material';
 
 @NgModule({
     declarations: [
@@ -19,7 +19,8 @@ import { MatFormFieldModule, MatInputModule } from '@angular/material';
         MatCardModule,
         CarouselModule,
         MatFormFieldModule,
-        MatInputModule
+        MatInputModule,
+        MatIconModule
     ],
     exports: [HomeComponent]
 })

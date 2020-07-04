@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Routes, RouterModule } from '@angular/router';
-import { HomeModule } from '../views/Home/Home.module';
+
 import { HomeComponent } from '../views/Home/Home.component';
 import { ClientLayoutComponent } from './ClientLayout.component';
 import { ContactComponent } from '../views/Contact/Contact.component';
@@ -9,6 +9,8 @@ import { SigninComponent } from '../views/signin/signin.component';
 import { RegisterComponent } from '../views/register/register.component';
 import { RateCalculatorComponent } from '../views/rate-calculator/rate-calculator.component';
 import { TrackComponent } from '../views/track/track.component';
+import { TestComponent } from '../views/test/test.component';
+
 
 
 const path: Routes = [
@@ -39,6 +41,10 @@ const path: Routes = [
             {
                 path: 'track',
                 component: TrackComponent
+            },
+            {
+                path: 'test',
+                component: TestComponent
             }
         ]
     }
@@ -47,9 +53,10 @@ const path: Routes = [
 @NgModule({
     imports: [
         CommonModule,
-
         RouterModule.forChild(path)
     ],
-    exports: [RouterModule]
+    exports: [
+        RouterModule
+    ]
 })
 export class ClientLayoutRoutingModule { }

@@ -9,6 +9,8 @@ import { SigninModule } from '../views/signin/signin.module';
 import { RegisterModule } from '../views/register/register.module';
 import { RateCalculatorModule } from '../views/rate-calculator/rate-calculator.module';
 import { TrackModule } from '../views/track/track.module';
+import { TestModule } from '../views/test/test.module';
+
 
 @NgModule({
   imports: [
@@ -20,9 +22,12 @@ import { TrackModule } from '../views/track/track.module';
     RegisterModule,
     RateCalculatorModule,
     TrackModule,
-    ClientLayoutRoutingModule,
+    TestModule,
+    ClientLayoutRoutingModule
   ],
-  declarations: [ClientLayoutComponent],
+  declarations: [
+    ClientLayoutComponent
+  ],
   exports: [ClientLayoutRoutingModule]
 })
 export class ClientLayoutModule { }

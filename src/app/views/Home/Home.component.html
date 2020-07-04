@@ -9,8 +9,8 @@
       </div>
       <a href="" class="mt-2 btn-round btn-t-primary" mat-button>Learn more !</a>
     </div>
-    <div class="col-md-7">
-      <img src="../../../assets/images/logo/banner.svg" class="banner-img">
+    <div class="col-md-7 image-wrapper">
+      <img src="./assets/images/logo/banner.svg" class="banner-img">
     </div>
   </div>
 </section>
@@ -25,7 +25,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-6">
-        <img src="../../../assets/images/shipping-ballon.svg" class="serv-main-img">
+        <img src="./assets/images/shipping-ballon.svg" class="serv-main-img">
       </div>
       <div class="col-md-6 d-flex flex-column justify-content-center">
         <span class="service-heading-1">
@@ -151,19 +151,19 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-4 text-center">
-        <img src="../../../assets/images/fill_order.png">
+        <img src="./assets/images/fill_order.png">
         <h4 class="title"><span class="emoji-icon">☝️</span> Fill up Pickup form Online</h4>
         <p class="banner-text">By Filling up and Submitting form your shipment is ready for pickup.</p>
         <a href="" class="mt-2 mr-4 btn-round btn-t-primary" mat-button>Register Now !</a>
       </div>
       <div class="col-lg-4 text-center">
-        <img src="../../../assets/images/pack_shipment.png">
+        <img src="./assets/images/pack_shipment.png">
         <h4 class="title"><span class="emoji-icon">✌️</span> Do Ready your courier</h4>
         <p class="banner-text">By Filling up and Submitting form your shipment is ready for pickup.</p>
         <a href="" class="mt-2 mr-4 btn-round btn-t-primary" mat-button>Learn more !</a>
       </div>
       <div class="col-lg-4 text-center">
-        <img src="../../../assets/images/fill_order.png">
+        <img src="./assets/images/fill_order.png">
         <h4 class="title"><span class="emoji-icon">👍</span> All Done ! Track Status</h4>
         <p class="banner-text">All done you can track status by AWB no. assigned to your parcel.</p>
         <a href="" class="mt-2 mr-4 btn-round btn-t-primary" mat-button>Track Now !</a>
@@ -177,16 +177,15 @@
 <section class="reviews">
   <h2 class="section-title">What our customer says !</h2>
   <div class="container-fluid">
-
     <owl-carousel-o [options]="customOptions">
       <ng-container *ngFor="let slide of reviews;index as i">
-        <ng-template class="review-slide" carouselSlide [id]="i">
+        <ng-template class="mat-elevation-z20 review-slide" carouselSlide [id]="i">
           <mat-card class="review-card">
             <div class="d-flex flex-column">
               <img src="{{slide.img}}" class="profile-img">
               <h5 class="profile-name">{{slide.name}}</h5>
-              <p>{{slide.content}}</p>
-
+              <h6 class="profile-sub">{{slide.area}}</h6>
+              <p class="content"><i><span class="material-icons quote-icon">format_quote</span>{{slide.content}}</i></p>
             </div>
           </mat-card>
         </ng-template>
@@ -198,10 +197,15 @@
 </section>
 
 <section class="question">
-  <h2 class="section-title">Have any Question ?</h2>
-  <p class="banner-text text-center">Feel Free to contact us <br> we'll love to hear from you.</p>
+  <h2 class="section-title">Have a Question on your mind?</h2>
+  <p class="banner-text text-center">Feel Free to contact us, we'll love to hear from you.</p>
 
-  <div class="d-flex justify-content-center align-items-center">
-    <input type="email" placeholder="type your email here">
+  <div class="mt-5 d-flex justify-content-center align-items-center">
+    <mat-form-field appearance="outline" class="email-input">
+      <input matInput type="email" placeholder=" Enter your email here">
+      <button mat-button matSuffix>
+        <mat-icon>send</mat-icon>
+      </button>
+    </mat-form-field>
   </div>
 </section>
