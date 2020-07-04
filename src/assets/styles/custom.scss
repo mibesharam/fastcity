@@ -69,6 +69,13 @@ h4.title {
   &l-1 {
     border-left: 1px solid $color-text-grey;
   }
+  &-2 {
+    border: 2px solid $color-accent-light;
+  }
+}
+
+.br-20 {
+  border-radius: 20px;
 }
 
 app-quick-order
@@ -84,4 +91,15 @@ section.question .mat-form-field-appearance-outline .mat-form-field-outline {
   border-radius: 5px;
   box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2),
     0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12);
+}
+
+section.track .mat-form-field-appearance-outline .mat-form-field-outline {
+  background-color: $color-bg-light !important;
+  border-radius: 5px;
+}
+
+.banner-text {
+  font-size: 1rem;
+  font-weight: 400;
+  color: $color-text-dark1;
 }

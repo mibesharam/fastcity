@@ -1,7 +1,7 @@
 <section class="container banner">
   <div class="row">
-    <div class="col-md-5">
-      <div class="d-flex align-content-center flex-column text-div">
+    <div class="col-md-5  h-100 d-table">
+      <div class="d-flex flex-column justify-content-center pt-3">
         <h3 class="banner-heading-2">Delivery urgent courier</h3>
         <h2 class="banner-heading-1">to your Destination !</h2>
         <p class="banner-text">Fastest Courier Service for lowest shipping rates, widest reach and best customer
@@ -182,10 +182,15 @@
         <ng-template class="mat-elevation-z20 review-slide" carouselSlide [id]="i">
           <mat-card class="review-card">
             <div class="d-flex flex-column">
+
               <img src="{{slide.img}}" class="profile-img">
               <h5 class="profile-name">{{slide.name}}</h5>
               <h6 class="profile-sub">{{slide.area}}</h6>
+
               <p class="content"><i><span class="material-icons quote-icon">format_quote</span>{{slide.content}}</i></p>
+              <div class="rating-star">
+                ⭐⭐⭐⭐
+              </div>
             </div>
           </mat-card>
         </ng-template>

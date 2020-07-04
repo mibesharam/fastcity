@@ -1,0 +1,48 @@
+@import "../../../assets/styles/variables.scss";
+
+section.addr-input {
+  padding-top: 5rem;
+  .banner {
+    .banner-img {
+      max-width: 100%;
+    }
+  }
+}
+
+.banner-heading {
+  &-1 {
+    font-size: 2.77rem;
+    color: $color-text-dark;
+  }
+  &-2 {
+    font-size: 2.15rem;
+    color: $color-text-grey;
+  }
+}
+
+section.intro {
+  padding: 5rem;
+  background-color: $color-primary-light2;
+}
+
+section.calculator {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+div.t-form-group {
+  & label {
+    font-size: 1.2rem;
+    display: block;
+    font-weight: 400;
+  }
+}
+
+ul.points {
+  padding: 1rem;
+  & li {
+    font-size: 1rem;
+    color: $color-text-grey;
+    padding-bottom: 0.5rem;
+  }
+}
