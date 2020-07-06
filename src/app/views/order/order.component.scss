@@ -1,0 +1,55 @@
+@import "../../../assets/styles/variables.scss";
+
+button.btn-d-type {
+  font-size: 1.2rem;
+  font-weight: 300;
+  &.active {
+    border: 1.5px solid $color-accent-light;
+    color: $color-accent-light;
+  }
+}
+mat-form-field.input-contact.mat-form-field
+  div.mat-form-field-prefix.ng-tns-c9-1.ng-star-inserted
+  span.mb-1
+  mat-form-field.input-contact {
+  & div.mat-form-field-prefix span {
+    position: relative !important;
+    top: -0.39rem !important;
+  }
+}
+
+.address-card-title {
+  font-size: 1.3rem;
+  font-weight: medium;
+  color: $color-accent-light;
+}
+
+.form-label {
+  font-size: 1.2rem;
+  font-weight: medium;
+}
+
+section.order {
+  & div.footer {
+    background-color: $color-primary-light2;
+    padding: 2rem 4rem;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    & p,
+    li {
+      color: $color-text-grey;
+    }
+  }
+}
+
+.price {
+  font-size: 1.5rem;
+
+  & span {
+    color: $color-primary-dark;
+  }
+}
+
+.wishes {
+  font-size: 1rem;
+}

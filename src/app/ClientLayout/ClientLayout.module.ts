@@ -10,6 +10,7 @@ import { RegisterModule } from '../views/register/register.module';
 import { RateCalculatorModule } from '../views/rate-calculator/rate-calculator.module';
 import { TrackModule } from '../views/track/track.module';
 import { TestModule } from '../views/test/test.module';
+import { OrderModule } from '../views/order/order.module';
 
 
 @NgModule({
@@ -23,6 +24,7 @@ import { TestModule } from '../views/test/test.module';
     RateCalculatorModule,
     TrackModule,
     TestModule,
+    OrderModule,
     ClientLayoutRoutingModule
   ],
   declarations: [

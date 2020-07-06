@@ -98,6 +98,11 @@ section.track .mat-form-field-appearance-outline .mat-form-field-outline {
   border-radius: 5px;
 }
 
+section.order .mat-form-field-appearance-outline .mat-form-field-outline {
+  background-color: $color-bg-light !important;
+  border-radius: 5px;
+}
+
 .banner-text {
   font-size: 1rem;
   font-weight: 400;

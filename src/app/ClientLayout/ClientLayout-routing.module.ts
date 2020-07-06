@@ -10,6 +10,7 @@ import { RegisterComponent } from '../views/register/register.component';
 import { RateCalculatorComponent } from '../views/rate-calculator/rate-calculator.component';
 import { TrackComponent } from '../views/track/track.component';
 import { TestComponent } from '../views/test/test.component';
+import { OrderComponent } from '../views/order/order.component';
 
 
 
@@ -43,8 +44,8 @@ const path: Routes = [
                 component: TrackComponent
             },
             {
-                path: 'test',
-                component: TestComponent
+                path: 'order',
+                component: OrderComponent
             }
         ]
     }

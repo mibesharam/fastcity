@@ -1,0 +1,142 @@
+<section class="order">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8 pt-5">
+                <h2 class="section-title text-left">When do you want delivery ?</h2>
+                <div class="d-flex">
+                    <button class="m-2 active btn-d-type p-3" mat-stroked-button color="accent">
+                        <span class="material-icons">
+                            directions_run
+                        </span> Deliver Now !
+                    </button>
+                    <button class="m-2 btn-d-type p-3" mat-stroked-button>
+                        <span class="material-icons">
+                            schedule
+                        </span>
+                        Schedule for Later</button>
+                </div>
+                <br>
+                <h2 class="section-title text-left">Approx Weight</h2>
+                <div>
+                    <div class="d-flex">
+                        <button mat-button class="btn-weight" color="primary" value="1">Up to 1 Kg</button>
+                        <button mat-button class="btn-weight" value="5">Up to 5 Kg</button>
+                        <button mat-button class="btn-weight" value="10">Up to 10 Kg</button>
+                        <button mat-button class="btn-weight" value="15">Up to 15 Kg</button>
+                        <button mat-button class="btn-weight" value="20">Up to 20 Kg</button>
+                    </div>
+                </div>
+
+                <br>
+                <mat-card class="from-card mat-elevation-z3">
+                    <mat-card-title>
+                        <h3 class="address-card-title">From</h3>
+                    </mat-card-title>
+                    <div class="d-flex flex-column">
+                        <div class="p-1">
+                            <mat-form-field class="w-100" color="primary" appearance="outline">
+                                <mat-label>Pickup Address</mat-label>
+                                <input matInput placeholder="type pickup address here">
+                            </mat-form-field>
+                        </div>
+                        <div class="p-1">
+                            <mat-form-field class="input-contact" color="primary" appearance="outline">
+                                <mat-label>Contact No.</mat-label>
+                                <input matInput placeholder="contact number">
+                                <span matPrefix>+91&nbsp;</span>
+                                <mat-hint>Enter Primary Contact</mat-hint>
+                            </mat-form-field>
+
+                        </div>
+                        <div class="p-1">
+                            <mat-form-field class="w-100" appearance="outline">
+                                <textarea matInput placeholder="Flat number, area, landmark, dimensions,..."></textarea>
+                            </mat-form-field>
+                        </div>
+                    </div>
+                </mat-card>
+                <br>
+                <mat-card class="to-card mat-elevation-z3">
+                    <mat-card-title>
+                        <h3 class="address-card-title">To</h3>
+                    </mat-card-title>
+                    <div class="d-flex flex-column">
+                        <div class="p-1">
+                            <mat-form-field class="w-100" color="primary" appearance="outline">
+                                <mat-label>Pickup Address</mat-label>
+                                <input matInput placeholder="type pickup address here">
+                            </mat-form-field>
+                        </div>
+                        <div class="p-1">
+                            <mat-form-field class="input-contact" color="primary" appearance="outline">
+                                <mat-label>Contact No.</mat-label>
+                                <input matInput placeholder="contact number">
+                                <span matPrefix>+91&nbsp;</span>
+                                <mat-hint>Enter Primary Contact</mat-hint>
+                            </mat-form-field>
+
+                        </div>
+                        <div class="p-1">
+                            <mat-form-field class="w-100" appearance="outline">
+                                <textarea matInput placeholder="Flat number, area, landmark, dimensions,..."></textarea>
+                            </mat-form-field>
+                        </div>
+                    </div>
+                </mat-card>
+
+                <br><br><br><br>
+                <div class="d-flex flex-column">
+                    <div class="p-1">
+                        <label class="form-label">What's inside ?</label>
+                        <mat-form-field class="w-100" color="primary" appearance="fill">
+                            <input matInput placeholder="Document, Food, Cloth...">
+                        </mat-form-field>
+                        <div class="d-flex">
+                            <div class="p-1 d-block mr-2">
+                                <a href="#">Documents</a>
+                            </div>
+                            <div class="p-1 d-block mr-2">
+                                <a href="#">Food or Beverages</a>
+                            </div>
+                            <div class="p-1 d-block mr-2">
+                                <a href="#">Cloth</a>
+                            </div>
+                            <div class="p-1 d-block mr-2">
+                                <a href="#">Groceries</a>
+                            </div>
+                            <div class="p-1 d-block mr-2">
+                                <a href="#">Cake</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </div>
+    <div class="container mt-3 footer">
+        <h2 class="price">Total Price : <span>{{60 | currency:'INR'}}</span>&nbsp;<span class="material-icons">
+                help_outline
+            </span> </h2>
+        <button mat-raised-button color="accent">Submit Order</button>
+        <br><br><br>
+        <p>By clicking 'Register Pickup' you're forwarding your request to our couriers and agree to our Terms And
+            Conditions as well as any agreement clauses.</p>
+        <p>Email / SMS can be send after Requesting for Pickup.</p>
+        <p>To Request Pickup , follow these simple Steps !</p>
+        <ol>
+            <li>Provide us with necessary details: addresses, phone numbers at each address, desired time of delivery,
+                weight of the delivery </li>
+            <li>If you like our quote, then click 'Submit order' button</li>
+            <li>Receive a call from the delivery boy assigned for your order. Negotiate, at which point he will be paid.
+                Give him more details about your parcel and desired process.</li>
+            <li>Send us a message or call our Operator in case of any doubt. You will get the Operator's number by
+                clicking 'Order' button, save it with your order's number</li>
+            <li>Get your delivery performed. Give the Courier signature right on his smartphone's screen to verify, that
+                all have been done properly</li>
+        </ol>
+        <p>-You may rate a courier after the delivery is done to help us assign just best couriers.</p>
+        <h4 class="wishes">Best Regards, Cityswift.in</h4>
+    </div>
+</section>
