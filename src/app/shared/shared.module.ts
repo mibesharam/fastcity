@@ -4,7 +4,11 @@ import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { MatButtonModule } from '@angular/material/button';
 import { RouterModule } from '@angular/router';
-import { MatIconModule } from '@angular/material';
+import { MatIconModule, MatMenuModule, MatProgressSpinnerModule, MatInputModule, MatCardModule } from '@angular/material';
+import { NotFoundComponent } from './not-found/not-found.component';
+import { ShippingCalcComponent } from './component/shipping-calc/shipping-calc.component';
+import { MapPickModule } from './component/map-pick/map-pick.module';
+
 
 
 @NgModule({
@@ -12,15 +16,19 @@ import { MatIconModule } from '@angular/material';
     CommonModule,
     MatButtonModule,
     MatIconModule,
-    RouterModule
+    MatMenuModule,
+    RouterModule,
+    MapPickModule
   ],
   declarations: [
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    NotFoundComponent
   ],
   exports: [
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    MapPickModule
   ]
 })
 export class SharedModule { }

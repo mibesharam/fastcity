@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RegisterComponent } from './register.component';
 import { MatCardModule, MatFormFieldModule, MatInputModule, MatCheckboxModule, MatButtonModule } from '@angular/material';
 import { RouterModule } from '@angular/router';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   imports: [
@@ -12,7 +13,9 @@ import { RouterModule } from '@angular/router';
     MatInputModule,
     MatCheckboxModule,
     MatButtonModule,
-    RouterModule
+    ReactiveFormsModule,
+    RouterModule,
+    FormsModule,
   ],
   declarations: [RegisterComponent],
   exports: [RegisterComponent]

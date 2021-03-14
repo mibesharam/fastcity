@@ -1,142 +1,323 @@
 <section class="order">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-2"></div>
-            <div class="col-md-8 pt-5">
-                <h2 class="section-title text-left">When do you want delivery ?</h2>
-                <div class="d-flex">
-                    <button class="m-2 active btn-d-type p-3" mat-stroked-button color="accent">
-                        <span class="material-icons">
-                            directions_run
-                        </span> Deliver Now !
-                    </button>
-                    <button class="m-2 btn-d-type p-3" mat-stroked-button>
-                        <span class="material-icons">
-                            schedule
-                        </span>
-                        Schedule for Later</button>
-                </div>
-                <br>
-                <h2 class="section-title text-left">Approx Weight</h2>
-                <div>
-                    <div class="d-flex">
-                        <button mat-button class="btn-weight" color="primary" value="1">Up to 1 Kg</button>
-                        <button mat-button class="btn-weight" value="5">Up to 5 Kg</button>
-                        <button mat-button class="btn-weight" value="10">Up to 10 Kg</button>
-                        <button mat-button class="btn-weight" value="15">Up to 15 Kg</button>
-                        <button mat-button class="btn-weight" value="20">Up to 20 Kg</button>
-                    </div>
-                </div>
+    <form autocomplete="off" #orderFrm="ngForm" [formGroup]="orderForm" (ngSubmit)="onSubmitOrder(orderFrm)">
+        <div class="container">
 
-                <br>
-                <mat-card class="from-card mat-elevation-z3">
-                    <mat-card-title>
-                        <h3 class="address-card-title">From</h3>
-                    </mat-card-title>
+            <div class="row">
+
+                <div class="mx-auto col-md-9 pt-5">
+                    <h2 class="section-title text-left">When do you want delivery ?</h2>
+                    <div class="d-flex flex-wrap">
+                        <button type="button" class="m-2 btn-d-type p-3" [ngClass]="{'active':!isSchedule.value}"
+                            mat-stroked-button [color]=" !isSchedule.value ? 'accent' : ''"
+                            (click)="onUpdateScheduleBtn(false)">
+                            <span class="material-icons">
+                                directions_run
+                            </span> Deliver Now !
+                        </button>
+                        <button type="button" class="m-2 btn-d-type p-3" [ngClass]="{'active':isSchedule.value}"
+                            mat-stroked-button [color]="isSchedule.value ? 'accent' : ''"
+                            (click)="onUpdateScheduleBtn(true)">
+                            <span class="material-icons">
+                                schedule
+                            </span>
+                            Schedule for Later</button>
+                    </div>
+                    <br>
+                    <h2 class="section-title text-left">Approx Weight</h2>
+                    <div>
+                        <div class="d-flex flex-wrap">
+                            <button type="button" mat-button class="btn-weight"
+                                [color]="Weight.value == 0.5 ? 'accent' : ''" value="1" (click)="onUpdateWeight(0.5)">Up
+                                to 0.5 kg</button>
+                            <button type="button" mat-button class="btn-weight"
+                                [color]="Weight.value == 1 ? 'accent' : ''" (click)="onUpdateWeight(1)">Up to 1
+                                Kg</button>
+                            <button type="button" mat-button class="btn-weight"
+                                [color]="Weight.value == 5 ? 'accent' : ''" (click)="onUpdateWeight(5)">Up to 5
+                                Kg</button>
+                            <button type="button" mat-button class="btn-weight"
+                                [color]="Weight.value == 10 ? 'accent' : ''" (click)="onUpdateWeight(10)">Up to 10
+                                Kg</button>
+                            <button type="button" mat-button class="btn-weight"
+                                [color]="Weight.value == 15 ? 'accent' : ''" (click)="onUpdateWeight(15)">Up to 15
+                                Kg</button>
+                            <button type="button" mat-button class="btn-weight"
+                                [color]="Weight.value == 20 ? 'accent' : ''" (click)="onUpdateWeight(20)">Up to 20
+                                Kg</button>
+                        </div>
+                    </div>
+
+                    <br>
+                    <ul class="points">
+                        <li>
+                            <mat-card class="from-card mat-elevation-z3">
+                                <mat-card-title>
+                                    <h3 class="address-card-title">From</h3>
+                                </mat-card-title>
+                                <div class="d-flex flex-column">
+                                    <div class="p-1">
+                                        <mat-form-field class="w-100" color="primary" appearance="outline">
+                                            <mat-label>Pickup Address</mat-label>
+                                            <input type="text" matInput (keyup)="onKeyupPickupAddress($event)"
+                                                (change)="onChangePickupAddress($event)" (focus)="placeId = ''"
+                                                [matAutocompletePosition]="'below'" [matAutocomplete]="autoPickup"
+                                                placeholder="Enter precise location like Appt name, society..etc"
+                                                cdkFocusInitial formControlName="pickupAddr">
+                                            <mat-autocomplete #autoPickup="matAutocomplete"
+                                                [autoActiveFirstOption]="true"
+                                                (optionSelected)="onSelectPickupOption($event)">
+                                                <mat-option *ngFor="let option of addressList$ | async"
+                                                    [value]="option.formatted_address" [id]="option.place_id">
+                                                    {{option.formatted_address}}
+                                                </mat-option>
+                                            </mat-autocomplete>
+                                            <mat-error *ngIf="orderForm.get('pickupAddr').invalid">
+                                                {{ getPickupAddrError() }}</mat-error>
+                                        </mat-form-field>
+                                    </div>
+                                    <div class="p-1 row">
+                                        <div class="col-md-4">
+                                            <mat-form-field class="w-100 input-contact" color="primary"
+                                                appearance="outline">
+                                                <mat-label>Contact No.</mat-label>
+                                                <input matInput placeholder="Enter Primary Contact"
+                                                    formControlName="pickupContactNo">
+                                                <mat-error *ngIf="orderForm.get('pickupContactNo').invalid">
+                                                    {{getPickupContactNoError()}}</mat-error>
+                                            </mat-form-field>
+
+                                        </div>
+                                        <div class="col-md-4">
+                                            <mat-form-field class="w-100 input-person" color="primary"
+                                                appearance="outline">
+                                                <mat-label>Contact Person.</mat-label>
+                                                <input matInput placeholder="Contact Person Name"
+                                                    formControlName="pickupContactName">
+                                                <mat-error *ngIf="orderForm.get('pickupContactName').invalid">
+                                                    {{getPickupContactNameError()}}</mat-error>
+                                            </mat-form-field>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <mat-form-field class="w-100 input-person" color="primary"
+                                                appearance="outline">
+                                                <mat-label>Pickup Pincode.</mat-label>
+                                                <input matInput placeholder="Pincode" placeholder="Pickup Pincode"
+                                                    formControlName="pickupPincode">
+                                                <mat-error *ngIf="orderForm.get('pickupPincode').invalid">
+                                                    {{getPickupPincodeError()}}</mat-error>
+                                            </mat-form-field>
+                                        </div>
+
+                                    </div>
+                                    <div class="row p-1" *ngIf="isSchedule.value">
+                                        <div class="ml-auto col-md-4">
+
+                                            <mat-form-field class="w-100 input-time" color="primary"
+                                                appearance="outline">
+                                                <mat-label>Pickup Date</mat-label>
+                                                <input matInput [matDatepicker]="picker" placeholder="Choose a date"
+                                                    formControlName="pickupDate">
+                                                <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                                                <mat-datepicker #picker></mat-datepicker>
+                                            </mat-form-field>
+                                        </div>
+                                        <div class="col-md-4">
+
+                                            <mat-form-field class="w-100 input-time" color="primary"
+                                                appearance="outline">
+                                                <mat-label>Pickup Time</mat-label>
+                                                <input matInput type="time" formControlName="pickupTime">
+                                            </mat-form-field>
+
+                                        </div>
+                                    </div>
+                                    <div class="p-1">
+                                        <mat-form-field class="w-100" appearance="outline">
+                                            <textarea matInput formControlName="pickupNote"
+                                                placeholder="Flat number, area, landmark, dimensions,..."></textarea>
+                                            <mat-error *ngIf="orderForm.get('pickupNote').invalid">
+                                                {{ getPickupNoteError() }}</mat-error>
+                                        </mat-form-field>
+                                    </div>
+                                </div>
+                            </mat-card>
+                        </li>
+                        <ng-container formArrayName="deliveryPoints">
+
+                            <li *ngFor="let f of DeliveryPoints.controls;index as i" [formGroupName]="i">
+                                <mat-card class="from-card mat-elevation-z3">
+                                    <mat-card-title>
+                                        <div class="d-flex justify-content-between">
+                                            <h3 class="address-card-title">To</h3>
+                                            <button mat-icon-button color="accent" *ngIf="DeliveryPoints.length > 1"
+                                                (click)="onRemoveDeliveryPoint(i)" aria-label="Delete Delivery Point">
+                                                <mat-icon>close</mat-icon>
+                                            </button>
+                                        </div>
+                                    </mat-card-title>
+                                    <div class="d-flex flex-column">
+                                        <div class="p-1">
+                                            <mat-form-field class="w-100" color="primary" appearance="outline">
+                                                <mat-label>Delivery Address</mat-label>
+                                                <input matInput (keyup)="onKeyupDeliveryAddress($event,i)"
+                                                    (change)="onChangeDeliveryAddress($event,i)" (focus)="placeId = ''"
+                                                    [matAutocompletePosition]="'below'"
+                                                    [matAutocomplete]="deliveryPickup"
+                                                    placeholder="Enter precise location like Appt name, society..etc"
+                                                    formControlName="deliveryAddr">
+
+                                                <mat-autocomplete #deliveryPickup="matAutocomplete"
+                                                    [autoActiveFirstOption]="true"
+                                                    (optionSelected)="onSelectDeiveryOption($event, i)">
+                                                    <mat-option *ngFor="let option of addressList$ | async"
+                                                        [value]="option.formatted_address" [id]="option.place_id">
+                                                        {{option.formatted_address}}
+                                                    </mat-option>
+                                                </mat-autocomplete>
+                                                <mat-error
+                                                    *ngIf="deliveryPoints.controls[i].get('deliveryAddr').invalid">
+                                                    {{getDeliveryAddrError(i)}}</mat-error>
+                                            </mat-form-field>
+                                        </div>
+                                        <div class="p-1 row">
+                                            <div class="col-md-4">
+                                                <mat-form-field class="w-100 input-contact" color="primary"
+                                                    appearance="outline">
+                                                    <mat-label>Contact No.</mat-label>
+                                                    <input matInput placeholder="Enter Primary Contact"
+                                                        formControlName="deliveryContactNo">
+                                                    <mat-error
+                                                        *ngIf="deliveryPoints.controls[i].get('deliveryContactNo').invalid">
+                                                        {{getDeliveryContactNoError(i)}}</mat-error>
+                                                </mat-form-field>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <mat-form-field class="w-100 input-person" color="primary"
+                                                    appearance="outline">
+                                                    <mat-label>Contact Person.</mat-label>
+                                                    <input matInput placeholder="Contact Person Name"
+                                                        formControlName="deliveryContactName">
+                                                    <mat-error
+                                                        *ngIf="deliveryPoints.controls[i].get('deliveryContactName').invalid">
+                                                        {{getDeliveryContactNameError(i)}}</mat-error>
+                                                </mat-form-field>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <mat-form-field class="w-100 input-person" color="primary"
+                                                    appearance="outline">
+                                                    <mat-label>Delivery Pincode.</mat-label>
+                                                    <input matInput placeholder="Delivery Pincode"
+                                                        formControlName="deliveryPincode">
+                                                    <mat-error
+                                                        *ngIf="deliveryPoints.controls[i].get('deliveryPincode').invalid">
+                                                        {{getDeliveryPincodeError(i)}}</mat-error>
+                                                </mat-form-field>
+                                            </div>
+
+                                        </div>
+                                        <div class="row p-1" *ngIf="isSchedule.value">
+                                            <div class="ml-auto col-md-4" *ngIf="isSchedule.value">
+
+                                                <mat-form-field class="w-100 input-time" color="primary"
+                                                    appearance="outline">
+                                                    <mat-label>Delivery Date</mat-label>
+                                                    <input matInput [matDatepicker]="dpicker"
+                                                        placeholder="Choose a date" formControlName="deliveryDate">
+                                                    <mat-datepicker-toggle matSuffix [for]="dpicker">
+                                                    </mat-datepicker-toggle>
+                                                    <mat-datepicker #dpicker></mat-datepicker>
+                                                </mat-form-field>
+                                            </div>
+                                            <div class=" col-md-4">
+
+                                                <mat-form-field class="w-100 input-time" color="primary"
+                                                    appearance="outline">
+                                                    <mat-label>Delivery Time</mat-label>
+                                                    <input matInput type="time" placeholder="Choose a date"
+                                                        formControlName="deliveryTime">
+                                                </mat-form-field>
+                                            </div>
+                                        </div>
+                                        <div class="p-1">
+                                            <mat-form-field class="w-100" appearance="outline">
+                                                <textarea matInput formControlName="deliveryNote"
+                                                    placeholder="Flat number, area, landmark, dimensions,..."></textarea>
+                                                <mat-error
+                                                    *ngIf="deliveryPoints.controls[i].get('deliveryNote').invalid">
+                                                    {{getDeliveryDescriptionError(i)}}</mat-error>
+                                            </mat-form-field>
+                                        </div>
+                                    </div>
+                                </mat-card>
+                            </li>
+                        </ng-container>
+                    </ul>
+                    <button mat-stroked-button color="accent" type="button" (click)="onAddDeliveryPoint()">Add
+                        New</button>
+
+                    <br><br><br><br>
                     <div class="d-flex flex-column">
                         <div class="p-1">
-                            <mat-form-field class="w-100" color="primary" appearance="outline">
-                                <mat-label>Pickup Address</mat-label>
-                                <input matInput placeholder="type pickup address here">
+                            <label class="form-label">What's inside ?</label>
+                            <mat-form-field class="w-100" color="primary" appearance="fill">
+                                <input matInput formControlName="inside" placeholder="Document, Food, Cloth...">
+                                <mat-error *ngIf="orderForm.get('inside').invalid">{{getInsideError()}}</mat-error>
                             </mat-form-field>
-                        </div>
-                        <div class="p-1">
-                            <mat-form-field class="input-contact" color="primary" appearance="outline">
-                                <mat-label>Contact No.</mat-label>
-                                <input matInput placeholder="contact number">
-                                <span matPrefix>+91&nbsp;</span>
-                                <mat-hint>Enter Primary Contact</mat-hint>
-                            </mat-form-field>
-
-                        </div>
-                        <div class="p-1">
-                            <mat-form-field class="w-100" appearance="outline">
-                                <textarea matInput placeholder="Flat number, area, landmark, dimensions,..."></textarea>
-                            </mat-form-field>
-                        </div>
-                    </div>
-                </mat-card>
-                <br>
-                <mat-card class="to-card mat-elevation-z3">
-                    <mat-card-title>
-                        <h3 class="address-card-title">To</h3>
-                    </mat-card-title>
-                    <div class="d-flex flex-column">
-                        <div class="p-1">
-                            <mat-form-field class="w-100" color="primary" appearance="outline">
-                                <mat-label>Pickup Address</mat-label>
-                                <input matInput placeholder="type pickup address here">
-                            </mat-form-field>
-                        </div>
-                        <div class="p-1">
-                            <mat-form-field class="input-contact" color="primary" appearance="outline">
-                                <mat-label>Contact No.</mat-label>
-                                <input matInput placeholder="contact number">
-                                <span matPrefix>+91&nbsp;</span>
-                                <mat-hint>Enter Primary Contact</mat-hint>
-                            </mat-form-field>
-
-                        </div>
-                        <div class="p-1">
-                            <mat-form-field class="w-100" appearance="outline">
-                                <textarea matInput placeholder="Flat number, area, landmark, dimensions,..."></textarea>
-                            </mat-form-field>
-                        </div>
-                    </div>
-                </mat-card>
-
-                <br><br><br><br>
-                <div class="d-flex flex-column">
-                    <div class="p-1">
-                        <label class="form-label">What's inside ?</label>
-                        <mat-form-field class="w-100" color="primary" appearance="fill">
-                            <input matInput placeholder="Document, Food, Cloth...">
-                        </mat-form-field>
-                        <div class="d-flex">
-                            <div class="p-1 d-block mr-2">
-                                <a href="#">Documents</a>
-                            </div>
-                            <div class="p-1 d-block mr-2">
-                                <a href="#">Food or Beverages</a>
-                            </div>
-                            <div class="p-1 d-block mr-2">
-                                <a href="#">Cloth</a>
-                            </div>
-                            <div class="p-1 d-block mr-2">
-                                <a href="#">Groceries</a>
-                            </div>
-                            <div class="p-1 d-block mr-2">
-                                <a href="#">Cake</a>
+                            <div class="d-flex flex-wrap">
+                                <div class="p-1 d-block">
+                                    <button type="button" mat-button
+                                        (click)="onUpdateInside('Document')">Documents</button>
+                                </div>
+                                <div class="p-1 d-block">
+                                    <button type="button" mat-button (click)="onUpdateInside('Food or Beverages')">Food
+                                        or
+                                        Beverages</button>
+                                </div>
+                                <div class="p-1 d-block">
+                                    <button type="button" mat-button (click)="onUpdateInside('Cloth')">Cloth</button>
+                                </div>
+                                <div class="p-1 d-block">
+                                    <button type="button" mat-button
+                                        (click)="onUpdateInside('Groceries')">Groceries</button>
+                                </div>
+                                <div class="p-1 d-block">
+                                    <button type="button" mat-button (click)="onUpdateInside('Cake')">Cake</button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
             </div>
-            <div class="col-md-2"></div>
         </div>
-    </div>
-    <div class="container mt-3 footer">
-        <h2 class="price">Total Price : <span>{{60 | currency:'INR'}}</span>&nbsp;<span class="material-icons">
-                help_outline
-            </span> </h2>
-        <button mat-raised-button color="accent">Submit Order</button>
-        <br><br><br>
-        <p>By clicking 'Register Pickup' you're forwarding your request to our couriers and agree to our Terms And
-            Conditions as well as any agreement clauses.</p>
-        <p>Email / SMS can be send after Requesting for Pickup.</p>
-        <p>To Request Pickup , follow these simple Steps !</p>
-        <ol>
-            <li>Provide us with necessary details: addresses, phone numbers at each address, desired time of delivery,
-                weight of the delivery </li>
-            <li>If you like our quote, then click 'Submit order' button</li>
-            <li>Receive a call from the delivery boy assigned for your order. Negotiate, at which point he will be paid.
-                Give him more details about your parcel and desired process.</li>
-            <li>Send us a message or call our Operator in case of any doubt. You will get the Operator's number by
-                clicking 'Order' button, save it with your order's number</li>
-            <li>Get your delivery performed. Give the Courier signature right on his smartphone's screen to verify, that
-                all have been done properly</li>
-        </ol>
-        <p>-You may rate a courier after the delivery is done to help us assign just best couriers.</p>
-        <h4 class="wishes">Best Regards, Cityswift.in</h4>
-    </div>
+
+        <div class="container mt-3 footer">
+            <h2 class="price">Total Price : <span>{{ orderPrice | currency:'INR'}}</span>&nbsp;<span
+                    class="material-icons">
+                    help_outline
+                </span> </h2>
+            <button mat-raised-button color="accent" type="submit">Submit Order</button>
+            <br><br><br>
+            <p>By clicking 'Register Pickup' you're forwarding your request to our couriers and agree to our Terms And
+                Conditions as well as any agreement clauses.</p>
+            <p>Email / SMS can be send after Requesting for Pickup.</p>
+            <p>To Request Pickup , follow these simple Steps !</p>
+            <ol>
+                <li>Provide us with necessary details: addresses, phone numbers at each address, desired time of
+                    delivery,
+                    weight of the delivery </li>
+                <li>If you like our quote, then click 'Submit order' button</li>
+                <li>Receive a call from the delivery boy assigned for your order. Negotiate, at which point he will be
+                    paid.
+                    Give him more details about your parcel and desired process.</li>
+                <li>Send us a message or call our Operator in case of any doubt. You will get the Operator's number by
+                    clicking 'Order' button, save it with your order's number</li>
+                <li>Get your delivery performed. Give the Courier signature right on his smartphone's screen to verify,
+                    that
+                    all have been done properly</li>
+            </ol>
+            <p>-You may rate a courier after the delivery is done to help us assign just best couriers.</p>
+            <h4 class="wishes">Best Regards, Cityswift.in</h4>
+        </div>
+    </form>
 </section>

@@ -3,14 +3,9 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  apiBaseURl: 'http://cityswift-001-site1.itempurl.com/api/',
+  // apiBaseURl: 'https://localhost:44363/api/',
+  mapApiKey: 'AIzaSyCS3c6490F-xKkOD7Xq3-Di6NKY4KhLYjk'
 };
 
-/*
- * For easier debugging in development mode, you can import the following file
- * to ignore zone related error stack frames such as `zone.run`, `zoneDelegate.invokeTask`.
- *
- * This import should be commented out in production mode because it will have a negative impact
- * on performance if an error is thrown.
- */
-// import 'zone.js/dist/zone-error';  // Included with Angular CLI.

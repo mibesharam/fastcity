@@ -1,0 +1,40 @@
+@import "../../../../assets/styles/variables.scss";
+
+section.profile-header {
+  padding: 5rem 0 0 0;
+}
+
+div.profile-section {
+  padding-top: 5rem;
+}
+
+img.profile-img {
+  width: 30%;
+}
+
+h1.profile-name {
+  margin-top: 1rem;
+  font-size: 3rem;
+  font-weight: 300;
+  color: $color-text-grey;
+  line-height: 2.5rem;
+}
+
+label {
+  font-weight: 500;
+}
+
+div.tab {
+  min-height: 80vh;
+  display: block;
+}
+
+table.listtable {
+  width: 100%;
+}
+
+@media screen and (min-width: 700px) {
+  img.profile-img {
+    width: 100%;
+  }
+}

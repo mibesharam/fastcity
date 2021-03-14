@@ -1,9 +1,16 @@
 @import "../../../assets/styles/variables.scss";
+
+mat-menu {
+  z-index: 12;
+}
 .navbar {
   color: $color-text-grey;
 }
 .logo {
-  max-width: 10.5rem;
+  max-width: 9.5rem;
+}
+.logo-content {
+  display: none;
 }
 .navbar-brand {
   & {
@@ -36,5 +43,39 @@ li.nav-item {
     background-color: $color-primary-light;
     color: $color-text-light;
     font-weight: 500;
+  }
+}
+
+button.profile-btn {
+  margin-top: -0.3rem;
+}
+
+.sidenav {
+  background: $color-text-light;
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  height: 100%;
+
+  a.sidenav-link {
+    font-size: 1.4rem;
+    padding: 1.2rem;
+  }
+
+  & a.btn-order {
+    background-color: $color-primary-light;
+    color: $color-text-light;
+    font-weight: 500;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .logo {
+    max-width: 10.5rem;
+  }
+
+  .logo-content {
+    display: inline-block;
   }
 }

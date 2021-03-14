@@ -1,0 +1,40 @@
+<div class="container pt-2">
+  <div class="col-md-11 mx-auto">
+    <h2>Order List</h2>
+    <div class="header-form">
+      <div class="row">
+        <div class="col-md-3">
+          <mat-form-field>
+            <input matInput [matDatepicker]="pickerFrom" [formControl]="FromDate" placeholder="From Date">
+            <mat-datepicker-toggle matSuffix [for]="pickerFrom"></mat-datepicker-toggle>
+            <mat-datepicker #pickerFrom></mat-datepicker>
+          </mat-form-field>
+        </div>
+        <div class="col-md-3">
+          <mat-form-field>
+            <input matInput [matDatepicker]="pickerTo" [formControl]="ToDate" placeholder="To Date">
+            <mat-datepicker-toggle matSuffix [for]="pickerTo"></mat-datepicker-toggle>
+            <mat-datepicker #pickerTo></mat-datepicker>
+          </mat-form-field>
+        </div>
+        <div class="col-md-3">
+          <mat-form-field>
+            <mat-label>Filter</mat-label>
+            <mat-select [(ngModel)]="FilterStr">
+              <mat-option value="All">All</mat-option>
+              <mat-option value="Approved">Approved</mat-option>
+              <mat-option value="Rejected">Rejected</mat-option>
+              <mat-option value="Completed">Completed</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+  </div>
+</div>

@@ -1,0 +1,46 @@
+@import "./../../assets/styles/variables.scss";
+mat-toolbar.admin-toolbar {
+  height: 3rem;
+  z-index: 10;
+  color: $color-text-light;
+  background-color: $color-primary-light;
+}
+
+ul.a-navbar {
+  list-style-type: none;
+  li a {
+    display: block;
+    padding: 0.5rem;
+    text-decoration: none;
+  }
+  li a:hover {
+    color: $color-primary-dark;
+  }
+  li a.active {
+    border-bottom: 2px solid $color-accent-light;
+  }
+}
+
+.fw-b {
+  font-weight: 500;
+}
+img.logo {
+  max-width: 70%;
+}
+.main-container {
+  position: absolute;
+  top: 3rem;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.sidenav {
+  width: 19rem;
+}
+
+mat-expansion-panel mat-expansion-panel-header {
+  h3 {
+    color: $color-primary-light !important;
+    font-weight: bolder !important;
+  }
+}

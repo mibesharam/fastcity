@@ -1,0 +1,96 @@
+<ngx-spinner bdColor="rgba(0,0,0,0.8)" size="medium" color="#0aa7b1" type="square-jelly-box" [fullScreen]="true">
+    <p style="color: white"> Loading... </p>
+</ngx-spinner>
+<mat-toolbar class="admin-toolbar mat-elevation-z5 d-flex flex-wrap">
+    <div class="p-0 mr-2">
+        <button mat-icon-button aria-label="menu toogler" (click)="opened=!opened">
+            <mat-icon>menu</mat-icon>
+        </button>
+    </div>
+    <div class="p-0">
+        <img src="./assets/images/logo/logo-light.svg" class="logo">
+        <span class="p-1 fw-b "> | Courier Admin</span>
+    </div>
+</mat-toolbar>
+<mat-sidenav-container class="main-container">
+    <mat-sidenav class="sidenav" #sidenav mode="over" [(opened)]="opened">
+        <mat-accordion [multi]="true" [displayMode]="'flat'">
+            <!-- Dashboard Nav -->
+            <mat-expansion-panel [expanded]="true">
+                <mat-expansion-panel-header>
+                    <h3>Dashboard</h3>
+                </mat-expansion-panel-header>
+
+                <ul class="p-0 pl-1 a-navbar">
+                    <li>
+                        <a [routerLink]="['/badmin']" [routerLinkActive]="'active'"
+                            [routerLinkActiveOptions]="{exact: true}" (click)="opened=!opened">Dashboard</a>
+                    </li>
+                    <li>
+                        <a [routerLink]="['/badmin']" (click)="opened=!opened">Reports</a>
+                    </li>
+                </ul>
+
+            </mat-expansion-panel>
+
+            <!-- order nav -->
+            <mat-expansion-panel [expanded]="true">
+                <mat-expansion-panel-header>
+                    <h3>Order</h3>
+                </mat-expansion-panel-header>
+
+                <ul class="p-0 pl-1 a-navbar">
+                    <li>
+                        <a href="#">Add New Order</a>
+                    </li>
+                    <li>
+                        <a [routerLink]="['/badmin/orderlist']" [routerLinkActive]="'active'"
+                            [routerLinkActiveOptions]="{exact: true}" (click)="opened=!opened">All Order</a>
+                    </li>
+                    <li>
+                        <a [routerLink]="['/badmin/action']" [routerLinkActive]="'active'"
+                            [routerLinkActiveOptions]="{exact: true}" (click)="opened=!opened">Order Action</a>
+                    </li>
+
+                </ul>
+
+            </mat-expansion-panel>
+
+            <!-- pickup nav -->
+            <mat-expansion-panel [expanded]="true">
+                <mat-expansion-panel-header>
+                    <h3>Pickup</h3>
+                </mat-expansion-panel-header>
+
+                <ul class="p-0 pl-1 a-navbar">
+                    <li>
+                        <a href="#">All Pickup</a>
+                    </li>
+
+                </ul>
+
+            </mat-expansion-panel>
+
+            <!-- track nav -->
+            <mat-expansion-panel [expanded]="true">
+                <mat-expansion-panel-header>
+                    <h3>Tracks</h3>
+                </mat-expansion-panel-header>
+
+                <ul class="p-0 pl-1 a-navbar">
+                    <li>
+                        <a href="#">Add Track</a>
+                    </li>
+                    <li>
+                        <a href="#">Track Status</a>
+                    </li>
+                </ul>
+
+            </mat-expansion-panel>
+
+        </mat-accordion>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <router-outlet></router-outlet>
+    </mat-sidenav-content>
+</mat-sidenav-container>

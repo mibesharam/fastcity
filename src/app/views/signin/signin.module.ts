@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { SigninComponent } from './signin.component';
 import { MatCardModule, MatFormFieldModule, MatInputModule, MatCheckboxModule, MatButtonModule } from '@angular/material';
 import { RouterModule } from '@angular/router';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 
 @NgModule({
   imports: [
@@ -12,6 +13,8 @@ import { RouterModule } from '@angular/router';
     MatInputModule,
     MatCheckboxModule,
     MatButtonModule,
+    ReactiveFormsModule,
+    FormsModule,
     RouterModule
   ],
   declarations: [SigninComponent],

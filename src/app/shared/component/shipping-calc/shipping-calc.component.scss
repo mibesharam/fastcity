@@ -1,0 +1,28 @@
+@import "../../../../assets/styles/variables.scss";
+
+section.calculator {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+div.t-form-group {
+  & label {
+    font-size: 1.2rem;
+    display: block;
+    font-weight: 400;
+  }
+}
+
+ul.points {
+  padding: 1rem;
+  & li {
+    font-size: 1rem;
+    color: $color-text-grey;
+    padding-bottom: 0.5rem;
+  }
+}
+
+h3.price {
+  font-size: 2rem;
+  color: $color-accent-light;
+}

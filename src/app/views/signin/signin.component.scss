@@ -19,6 +19,15 @@ section.login {
 div.form-div {
   padding: 2rem;
   position: relative;
-  top: 50%;
-  transform: translate(0, -50%);
+  // top: 50%;
+  // transform: translate(0, -50%);
+}
+
+a.anchorBtn {
+  color: $color-accent-light;
+  cursor: pointer;
+  font-weight: 500;
+}
+a.anchorBtn:hover {
+  text-decoration: underline;
 }

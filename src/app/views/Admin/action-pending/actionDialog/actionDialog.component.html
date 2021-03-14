@@ -1,0 +1,88 @@
+<mat-progress-bar mode="indeterminate" color="accent" *ngIf="showSpinner"></mat-progress-bar>
+<h1 mat-dialog-title>Order Action</h1>
+<div mat-dialog-content>
+  <div class="row">
+    <div class="col-md-6" *ngIf="!showSpinner">
+      <ul class="points">
+        <li>
+          <span class="heading">From,</span>
+          <div class="d-flex flex-column">
+            <p>{{orderData.p_Adrl1}}<br>
+              {{orderData.p_Adrl2}} <br>
+              {{orderData.p_State}}-{{orderData.p_Pincode}} <br>
+              <ng-container *ngIf="!orderData.isSameDay"> <strong>Time
+                  :</strong>{{orderData.p_O_Date|date:'shortDate'}}<span
+                  *ngIf="orderData.p_O_Time">({{orderData.p_O_Time}})</span></ng-container> <br>
+              {{orderData.p_ContactPerson}}-{{orderData.p_Phone}}
+            </p>
+          </div>
+        </li>
+        <li>
+          <span class="heading">To,</span>
+          <div class="d-flex flex-column">
+            <p>{{orderData.d_Adrl1}}<br>
+              {{orderData.d_Adrl2}} <br>
+              {{orderData.d_State}}-{{orderData.d_Pincode}} <br>
+              <ng-container *ngIf="!orderData.isSameDay"> <strong>Time
+                  :</strong>{{orderData.d_O_Date|date:'shortDate'}}<span
+                  *ngIf="orderData.d_O_Time">({{orderData.d_O_Time}})</span></ng-container> <br>
+              {{orderData.d_ContactPerson}}-{{orderData.d_Phone}}
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="col-md-6" *ngIf="!showSpinner">
+      <div class="d-flex flex-column">
+        <strong>Total Price: {{orderData.amount | currency:'INR'}}</strong>
+        <div class="mt-1">
+          <p><strong>Courier Medium : </strong>{{courierMedium==='TPS'?'Third Party':'Ours'}}</p>
+        </div>
+
+        <div class="mt-1" *ngIf="courierMedium==='TPS'">
+          <strong>Courier Service :</strong>
+          <mat-select required [(ngModel)]="selectedCourier">
+            <mat-option *ngFor="let o of availabelCouriers" [value]="o.courier_company_id">{{o.courier_name}},
+              {{o.freight_charge|currency:'INR'}}, {{o.etd_hours}}Hrs</mat-option>
+          </mat-select>
+          <small>Estimated Delivery : {{getEstimatedDate()}}</small>
+        </div>
+
+        <div class="mt-3">
+          <strong>Action :</strong>
+          <mat-select required [(ngModel)]="approved">
+            <mat-option [value]="1">Approved</mat-option>
+            <mat-option [value]="0">Rejected</mat-option>
+          </mat-select>
+        </div>
+        <div class="mt-1">
+          <mat-form-field class="w-80" *ngIf="approved==0">
+            <mat-label>Remark</mat-label>
+            <input matInput [(ngModel)]="rejectRemark" placeholder="Reject Remark">
+          </mat-form-field>
+        </div>
+        <div class="mt-3" *ngIf="courierMedium !== 'OUR'">
+          <mat-checkbox [(ngModel)]="isClientPickup">Pickup same as From Address ?
+          </mat-checkbox>
+          <br>
+          <ng-container *ngIf="!isClientPickup">
+            <strong>Pickup Zone :</strong>
+            <mat-select required [(ngModel)]="selectedBranch">
+              <mat-option *ngFor="let b of Branches" [value]="b.id">{{b.adrl1}}</mat-option>
+            </mat-select>
+          </ng-container>
+        </div>
+        <div class="mt-1">
+          <mat-checkbox [(ngModel)]="notifyClient">Send Notification </mat-checkbox>
+        </div>
+        <div class="mt-1">
+          <button mat-stroked-button color="primary" (click)="onApprovedCourier()">Submit</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+<div mat-dialog-actions>
+  <button class="ml-auto" mat-button (click)="onClickCancel()">Cancel</button>
+</div>

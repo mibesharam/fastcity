@@ -11,6 +11,13 @@ import { RateCalculatorModule } from '../views/rate-calculator/rate-calculator.m
 import { TrackModule } from '../views/track/track.module';
 import { TestModule } from '../views/test/test.module';
 import { OrderModule } from '../views/order/order.module';
+import { ReactiveFormsModule } from '@angular/forms';
+import { LoggingService } from '../shared/services/logging.service';
+import { NgxSpinnerModule } from 'ngx-spinner';
+import { ClientDashboardModule } from '../views/clientDashboard/client-dashboard/client-dashboard.module';
+import { AuthInterceptorService } from '../shared/helpers/authInterceptor.service';
+import { HTTP_INTERCEPTORS } from '@angular/common/http';
+import { ErrorInterceptorService } from '../shared/helpers/errorInterceptor.service';
 
 
 @NgModule({
@@ -25,11 +32,21 @@ import { OrderModule } from '../views/order/order.module';
     TrackModule,
     TestModule,
     OrderModule,
-    ClientLayoutRoutingModule
+    ClientDashboardModule,
+    ReactiveFormsModule,
+    ClientLayoutRoutingModule,
+    NgxSpinnerModule,
+   
   ],
   declarations: [
     ClientLayoutComponent
   ],
-  exports: [ClientLayoutRoutingModule]
+  exports: [
+    ClientLayoutRoutingModule
+  ],
+  providers: [
+    LoggingService,
+
+  ]
 })
 export class ClientLayoutModule { }

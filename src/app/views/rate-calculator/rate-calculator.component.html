@@ -29,55 +29,14 @@
     </div>
 </section>
 
-<section class="calculator">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6 p-4 br-20 b-2 ">
-                <h2 class="section-title text-left">Shipping Rate Calculator</h2>
-                <div class="form-div d-flex flex-column">
-                    <div class="t-form-group pt-5">
-                        <label>Pickup Location</label>
-                        <mat-form-field class="w-100" appearance="fill">
-                            <input matInput placeholder="Enter Pickup Location">
-                        </mat-form-field>
-                    </div>
-                    <div class="t-form-group pt-2">
-                        <label>Delivery Location</label>
-                        <mat-form-field class="w-100" appearance="fill">
-                            <input matInput placeholder="Enter Delivery Location">
-                        </mat-form-field>
-                    </div>
-                    <div class="t-form-group pt-2">
-                        <label>Weight</label>
-                        <mat-form-field class="w-50" appearance="fill">
-                            <input matInput placeholder="weight">
-                            <mat-hint>enter approx weight in (kgs)</mat-hint>
-                        </mat-form-field>
-                    </div>
-                    <button class="mt-2 btn-round btn-t-primary" mat-button>Calculate</button>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <mat-card>
-                    <mat-card-title class="mb-5">Your Best Shipping Rate</mat-card-title>
-                    <mat-card-content>
-                        <p class="banner-text text-center">Ship a <strong>0.5kg</strong> prepaid packet from
-                            <strong>394210</strong>
-                            to<strong>395001</strong> at rates as</p>
-                        <h3 class="price text-center">{{ 60 | currency:'INR'}}</h3>
-                    </mat-card-content>
-                </mat-card>
-            </div>
-        </div>
-    </div>
-</section>
+<app-shipping-calc></app-shipping-calc>
 
 <section class="howitwork">
     <div class="container">
         <h2 class="section-title text-left">How Does It Work</h2>
         <ul class="points">
-            <li>Enter the 6 digit PIN code of the pick-up location in the Pick-up Area Pincode field.</li>
-            <li>Enter the 6 digit PIN code of the delivery location in the Delivery Area Pincode field.</li>
+            <li>Enter the 6 digit PIN code or Address of the pick-up location in the Pick-up Area Pincode field.</li>
+            <li>Enter the 6 digit PIN code or Address of the delivery location in the Delivery Area Pincode field.</li>
             <li>Enter the approximate weight (in Kgs) in the Approximate Weight field.<br>
                 (For example, if your package
                 weighs 1 kg, enter 1. Similarly, if your package weighs 500 gms or 300 gms, enter 0.500 or 0.300

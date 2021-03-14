@@ -1,6 +1,6 @@
 <section class="login">
   <div class="container">
-    <mat-card class="login-card mat-elevation-z6">
+    <mat-card class="login-card mat-elevation-z2">
       <div class="row">
         <div class="col-lg-7">
           <img src="./assets/images/account-bg.svg" width="100%">
@@ -8,22 +8,36 @@
         <div class="col-lg-5">
           <div class="form-div">
             <div>
-              <div class="p-2">
-                <mat-form-field class="w-100">
-                  <mat-label>Email</mat-label>
-                  <input matInput type="email" placeholder="abcd@example.com">
-                </mat-form-field>
-              </div>
-              <div class="p-2">
-                <mat-form-field class="w-100">
-                  <mat-label>Password</mat-label>
-                  <input matInput type="password" placeholder="abcd@example.com">
-                </mat-form-field>
-                <mat-checkbox>Remember Login</mat-checkbox>
-              </div>
-              <div class="p-2">
-                <button class="login-btn btn-round w-100" mat-button><i class="material-icons">login</i> Login </button>
-              </div>
+              <form [formGroup]="loginForm" #lForm="ngForm" (ngSubmit)="onSubmitLogin(lForm)">
+                <div class="p-2">
+                  <mat-form-field class="w-100">
+                    <mat-label>Email</mat-label>
+                    <input matInput type="email" placeholder="abcd@example.com" required autofocus
+                      formControlName="email">
+                    <mat-error *ngIf="loginForm.get('email').invalid">{{getEmailError()}}</mat-error>
+
+                  </mat-form-field>
+                </div>
+                <div class="p-2">
+                  <mat-form-field class="w-100">
+                    <mat-label>Password</mat-label>
+                    <input matInput type="password" placeholder="password" required formControlName="password">
+                    <mat-error *ngIf="loginForm.get('password').invalid">{{ getPasswordError() }}</mat-error>
+                  </mat-form-field>
+                  <mat-checkbox>Remember Login</mat-checkbox>
+                </div>
+
+                <div class="p-2">
+                  <button class="login-btn btn-round w-100" type="submit" mat-button><i class="material-icons">login</i>
+                    Login
+                  </button>
+                </div>
+                <div class="d-flex p-2 justify-content-between flex-wrap">
+                  <a class="anchorBtn">Forgot Password</a>
+                  <a class="anchorBtn" (click)="onClickResendVerification()" *ngIf="showResendBtn">Resend Verification
+                    Mail</a>
+                </div>
+              </form>
               <div class="p-3">
                 <h5 class="strike-title"><span>OR</span></h5>
               </div>

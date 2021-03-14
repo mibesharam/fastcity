@@ -1,0 +1,49 @@
+<mat-progress-bar mode="indeterminate" color="accent" *ngIf="showSpinner"></mat-progress-bar>
+<h1 mat-dialog-title>Order Detail</h1>
+<div mat-dialog-content>
+    <div class="row">
+        <div class="col-md-6" *ngIf="!showSpinner">
+            <ul class="points">
+                <li>
+                    <span class="heading">From,</span>
+                    <div class="d-flex flex-column">
+                        <p>{{data.p_Adrl1}}<br>
+                            {{data.p_Adrl2}} <br>
+                            {{data.p_State}}-{{data.p_Pincode}} <br>
+                            <ng-container *ngIf="!data.isSameDay"> <strong>Time
+                                    :</strong>{{data.p_O_Date|date:'shortDate'}}<span
+                                    *ngIf="data.p_O_Time">({{data.p_O_Time}})</span></ng-container> <br>
+                            {{data.p_ContactPerson}}-{{data.p_Phone}}
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <span class="heading">To,</span>
+                    <div class="d-flex flex-column">
+                        <p>{{data.d_Adrl1}}<br>
+                            {{data.d_Adrl2}} <br>
+                            {{data.d_State}}-{{data.d_Pincode}} <br>
+                            <ng-container *ngIf="!data.isSameDay"> <strong>Time
+                                    :</strong>{{data.d_O_Date|date:'shortDate'}}<span
+                                    *ngIf="data.d_O_Time">({{data.d_O_Time}})</span></ng-container> <br>
+                            {{data.d_ContactPerson}}-{{data.d_Phone}}
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="col-md-6" *ngIf="!showSpinner">
+            <div class="d-flex flex-column">
+                <p><strong>Total Price: </strong>{{data.amount | currency:'INR'}}</p>
+                <p><strong>Current Status: </strong>{{data.remarks}}</p>
+                <p *ngIf="shipmentStatus.updDt"><strong>Last Updated: </strong>{{shipmentStatus.updDt | date:'medium'}}
+                </p>
+                <a [routerLink]="['/track']" [queryParams]="{awbNo: data.awbNo}" (click)="onClickCancel()">Detail
+                    Shipment Status</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div mat-dialog-actions>
+    <button class="ml-auto" mat-button (click)="onClickCancel()">Cancel</button>
+</div>

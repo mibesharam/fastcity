@@ -1,10 +1,54 @@
+<div class="sidenav p-2" *ngIf="showNav">
+  <div class="d-flex justify-content-end">
+    <div class="p-1">
+      <button mat-icon-button (click)="showNav = !showNav">
+        <mat-icon>close</mat-icon>
+      </button>
+    </div>
+  </div>
+  <div class="col-md-11 mx-auto d-flex flex-column justify-content-center align-items-center">
+    <div class="p-1">
+      <a class="sidenav-link" (click)="showNav=!showNav" [routerLink]="['']" [routerLinkActiveOptions]="{ exact: true }"
+        routerLinkActive="active">Home</a>
+    </div>
+    <div class="p-1">
+      <a class="sidenav-link" (click)="showNav=!showNav" [routerLink]="['/about']"
+        [routerLinkActiveOptions]="{ exact: true }" routerLinkActive="active">About</a>
+    </div>
+    <div class="p-1">
+      <a class="sidenav-link" (click)="showNav=!showNav" [routerLink]="['/track']"
+        [routerLinkActiveOptions]="{ exact: true }" routerLinkActive="active">Track</a>
+    </div>
+    <div class="p-1">
+      <a class="sidenav-link" (click)="showNav=!showNav" [routerLink]="['/contact']"
+        [routerLinkActiveOptions]="{ exact: true }" routerLinkActive="active">Contact</a>
+    </div>
+    <div class="p-1">
+      <a class="sidenav-link" *ngIf="isLogin" (click)="onClickProfile()">Dashboard</a>
+    </div>
+    <div class="p-1 d-flex flex-wrap justify-content-center" *ngIf="!isLogin">
+      <a class="btn-round btn-order" (click)="showNav=!showNav" [routerLink]="['/login']" mat-button
+        routerLinkActive="active">Sign In</a>
+    </div>
+
+    <div class="p-1 d-flex flex-wrap justify-content-center" *ngIf="isLogin">
+      <a class="btn-round btn-order" (click)="onLogout()" mat-button routerLinkActive="active">Log Out</a>
+    </div>
+
+    <div class="p-1">
+      <a class="btn-round btn-order" [routerLink]="['/order']" mat-button>Order Now !</a>
+    </div>
+  </div>
+</div>
+
 <nav class="navbar navbar-expand-lg">
   <div class="container">
     <a class="navbar-brand" [routerLink]="['']">
-      <img src="./assets/images/logo/logo-lg.png" class="logo"> | Courier Services
+      <img src="./assets/images/logo/logo-lg.png" class="logo"> <span class="logo-content">| Courier Services</span>
     </a>
-    <button mat-icon-button color="primary" class="navbar-toggler" type="button" data-toggle="collapse"
-      data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <button (click)="showNav=!showNav" mat-icon-button color="primary" class="navbar-toggler" type="button"
+      data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+      aria-label="Toggle navigation">
       <mat-icon>menu</mat-icon>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
@@ -19,8 +63,17 @@
         <li class="nav-item mr-4">
           <a class="nav-link" [routerLink]="['/track']" routerLinkActive="active">Track</a>
         </li>
-        <li class="nav-item mr-4">
+        <li class="nav-item mr-4" *ngIf="!isLogin">
           <a class="nav-link" [routerLink]="['/login']" routerLinkActive="active">Sign In</a>
+        </li>
+        <li class="nav-item mr-4" *ngIf="isLogin">
+          <button class="profile-btn" mat-icon-button [matMenuTriggerFor]="accountMenu">
+            <mat-icon>account_circle</mat-icon>
+          </button>
+          <mat-menu #accountMenu="matMenu">
+            <button mat-menu-item (click)="onClickProfile()">Profile</button>
+            <button mat-menu-item (click)="onLogout()">Log out</button>
+          </mat-menu>
         </li>
         <li class="nav-item">
           <a class="btn-round btn-order" [routerLink]="['/order']" mat-button>Order Now !</a>

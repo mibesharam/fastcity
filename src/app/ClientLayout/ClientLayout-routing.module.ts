@@ -11,6 +11,10 @@ import { RateCalculatorComponent } from '../views/rate-calculator/rate-calculato
 import { TrackComponent } from '../views/track/track.component';
 import { TestComponent } from '../views/test/test.component';
 import { OrderComponent } from '../views/order/order.component';
+import { ClientDashboardComponent } from '../views/clientDashboard/client-dashboard/client-dashboard.component';
+import { AuthGuard } from '../shared/helpers/auth.guard';
+import { NotFoundComponent } from '../shared/not-found/not-found.component';
+import { MapPickComponent } from '../shared/component/map-pick/map-pick.component';
 
 
 
@@ -32,6 +36,11 @@ const path: Routes = [
                 component: SigninComponent
             },
             {
+                path: 'auth/verify',
+                component: SigninComponent,
+                data: { isVerification: true }
+            },
+            {
                 path: 'register',
                 component: RegisterComponent
             },
@@ -46,10 +55,29 @@ const path: Routes = [
             {
                 path: 'order',
                 component: OrderComponent
+            },
+            {
+                path: 'dashboard',
+                component: ClientDashboardComponent,
+                canActivate: [AuthGuard]
+            },
+            {
+                path:'googleMap',
+                component: MapPickComponent
+            }
+        ]
+    },
+    {
+        path: '**',
+        component: ClientLayoutComponent,
+        children: [
+            {
+                path: '',
+                component: NotFoundComponent
             }
         ]
     }
-]
+];
 
 @NgModule({
     imports: [
